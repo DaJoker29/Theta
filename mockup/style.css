@@ -1,0 +1,84 @@
+@import 'reset.css';
+
+html {
+    background: #000;
+    color: #D3D3D3;
+}
+
+a:visited,
+a:link {
+    color: #B23130;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #D3D3D3;
+}
+
+
+
+#sidebar {
+    padding: 20px;
+    padding-left: 0;
+    margin-right: 40px;
+    position: fixed;
+    float: left;
+    width: 20%;
+    max-width: 240px;
+    height: 100%;
+    overflow: hidden;
+}
+
+#site-header {
+    text-align: right;
+    font-family: 'BigJohn';
+    font-size: 48px;
+    letter-spacing: -4px;
+    line-height: 90%;
+}
+
+#site-nav {
+    margin-top: 42px;
+    font-family: 'SlimJoe';
+    font-size: 36px;
+    text-align: right;
+}
+
+#site-nav > li {
+    margin-top: 10px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#site-nav > li:hover {
+    border-bottom: 1px solid #B23130; 
+}
+
+.active > a {
+    font-weight: bold;
+    color: #D3D3D3;    
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;  
+    height: 80px;
+    width: 100%;
+    font-family: 'SlimJoe';
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'BigJohn';
+    src: url('fonts/BIG JOHN.otf');
+}
+
+@font-face {
+    font-family: 'SlimJoe';
+    src: url('fonts/Slim Joe.otf');
+}
