@@ -5,10 +5,13 @@ html {
     color: #D3D3D3;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:visited,
 a:link {
     color: #B23130;
-    text-decoration: none;
 }
 
 a:hover,
@@ -36,6 +39,7 @@ a:active {
     font-size: 48px;
     letter-spacing: -4px;
     line-height: 90%;
+    text-shadow: 1px 1px;
 }
 
 #site-nav {
@@ -43,20 +47,38 @@ a:active {
     font-family: 'SlimJoe';
     font-size: 36px;
     text-align: right;
+    list-style-type: none;
 }
 
 #site-nav > li {
     margin-top: 10px;
-    border-bottom: 1px solid #d3d3d3;
+    border-bottom: 1px solid #B23130;
 }
 
 #site-nav > li:hover {
-    border-bottom: 1px solid #B23130; 
+    border-bottom: 1px dotted #D3D3D3;
 }
 
-.active > a {
+#site-nav > .active {
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.active > a:link,
+.active > a:visited {
     font-weight: bold;
-    color: #D3D3D3;    
+    color: #D3D3D3; 
+}
+
+#site-title {
+    color: #D3D3D3;
+}
+
+#site-header:hover > #site-tagline{
+    color: #D3D3D3;
+}
+
+#site-header:hover > #site-title {
+    color: #B23130;
 }
 
 footer {
