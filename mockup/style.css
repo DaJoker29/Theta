@@ -58,6 +58,7 @@ a:active {
 
 .post {
     margin-bottom: 4em;
+    padding: 0 2em 0;
 }
 
 #site-header,
@@ -79,11 +80,12 @@ a:active {
     font-family: 'SlimJoe';
     font-weight: bold;
     font-size: 1.2em;
+    text-align: right;
+    line-height: 1.2;
 }
 
 .post-body {
     clear: both;
-    padding: 0 2em 0;
     font-size: 1.4em;
     line-height: 1.2; 
 }
@@ -94,6 +96,18 @@ a:active {
 
 .post-meta span {
     display: block;
+}
+
+.pagination-container {
+    text-align: center;
+    font-family: 'SlimJoe';
+    font-weight: bold;
+    font-size: 2.4em;
+}
+
+.pagination {
+    display: inline-block;
+    margin: 0 5em;
 }
 
 #site-nav {
