@@ -1,0 +1,39 @@
+html {
+    background: #000;
+    color: #D3D3D3;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'BigJohn';
+}
+
+h3 {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited,
+a:link {
+    color: #B23130;
+}
+
+a:hover,
+a:active {
+    color: #D3D3D3;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+}

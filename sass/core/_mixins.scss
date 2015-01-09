@@ -1,0 +1,21 @@
+@mixin font-face($name, $url) {
+  @font-face {
+    font-family: #{$name};
+    src: url('#{$url}.eot');
+    src: url('#{$url}.eot#iefix') format("embedded-opentype"),
+         url('#{$url}.ttf') format('truetype'),
+         url('#{$url}.svg##{$name}') format('svg'),
+         url('#{$url}.woff') format('woff');
+ 
+    @content;
+  }
+}
+
+@mixin top-lining() {
+    text-align: right;
+    font-family: 'BigJohn';
+    font-size: 3em;
+    letter-spacing: -4px;
+    line-height: 90%;
+    text-shadow: 1px 1px;
+}

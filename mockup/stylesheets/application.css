@@ -1,0 +1,267 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../../sass/core/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../../sass/core/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../../sass/core/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../../sass/core/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../../sass/core/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../../sass/core/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../../sass/core/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../../sass/core/_global.scss */
+html {
+  background: #000;
+  color: #D3D3D3;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+/* line 7, ../../sass/core/_global.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'BigJohn';
+}
+
+/* line 16, ../../sass/core/_global.scss */
+h3 {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+/* line 21, ../../sass/core/_global.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 25, ../../sass/core/_global.scss */
+a:visited,
+a:link {
+  color: #B23130;
+}
+
+/* line 30, ../../sass/core/_global.scss */
+a:hover,
+a:active {
+  color: #D3D3D3;
+}
+
+/* line 35, ../../sass/core/_global.scss */
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: block;
+}
+
+@font-face {
+  font-family: BigJohn;
+  src: url("../fonts/bj_sj/big_john-webfont.eot");
+  src: url("../fonts/bj_sj/big_john-webfont.eot#iefix") format("embedded-opentype"), url("../fonts/bj_sj/big_john-webfont.ttf") format("truetype"), url("../fonts/bj_sj/big_john-webfont.svg#BigJohn") format("svg"), url("../fonts/bj_sj/big_john-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: SlimJoe;
+  src: url("../fonts/bj_sj/slim_joe-webfont.eot");
+  src: url("../fonts/bj_sj/slim_joe-webfont.eot#iefix") format("embedded-opentype"), url("../fonts/bj_sj/slim_joe-webfont.ttf") format("truetype"), url("../fonts/bj_sj/slim_joe-webfont.svg#SlimJoe") format("svg"), url("../fonts/bj_sj/slim_joe-webfont.woff") format("woff");
+}
+/* line 1, ../../sass/layouts/_sidebar.scss */
+#sidebar {
+  padding: 1em;
+  padding-left: 0;
+  margin-right: 20px;
+  position: fixed;
+  width: 250px;
+  max-width: 240px;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 12, ../../sass/layouts/_sidebar.scss */
+#site-header {
+  text-align: right;
+  font-family: 'BigJohn';
+  font-size: 3em;
+  letter-spacing: -4px;
+  line-height: 90%;
+  text-shadow: 1px 1px;
+}
+
+/* line 1, ../../sass/layouts/_content.scss */
+#content {
+  margin-left: 250px;
+  padding: 1em;
+}
+
+/* line 1, ../../sass/layouts/_nav.scss */
+#site-nav {
+  margin-top: 42px;
+  font-family: 'SlimJoe';
+  font-size: 2.4em;
+  text-align: right;
+  list-style-type: none;
+}
+
+/* line 9, ../../sass/layouts/_nav.scss */
+#site-nav > li {
+  margin-top: 10px;
+  border-bottom: 1px solid #B23130;
+}
+
+/* line 14, ../../sass/layouts/_nav.scss */
+#site-nav > li:hover {
+  border-bottom: 1px dotted #D3D3D3;
+}
+
+/* line 18, ../../sass/layouts/_nav.scss */
+#site-nav > .active {
+  border-bottom: 1px solid #D3D3D3;
+}
+
+/* line 1, ../../sass/layouts/_header.scss */
+#site-title {
+  color: #D3D3D3;
+}
+
+/* line 5, ../../sass/layouts/_header.scss */
+#site-header:hover > #site-tagline {
+  color: #D3D3D3;
+}
+
+/* line 9, ../../sass/layouts/_header.scss */
+#site-header:hover > #site-title {
+  color: #B23130;
+}
+
+/* line 1, ../../sass/layouts/_footer.scss */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  font-family: 'SlimJoe';
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+/* line 1, ../../sass/modules/_posts.scss */
+.post {
+  margin-bottom: 4em;
+  padding: 0 2em 0;
+}
+
+/* line 6, ../../sass/modules/_posts.scss */
+.post-title {
+  text-align: right;
+  font-family: 'BigJohn';
+  font-size: 3em;
+  letter-spacing: -4px;
+  line-height: 90%;
+  text-shadow: 1px 1px;
+}
+
+/* line 10, ../../sass/modules/_posts.scss */
+.post-title {
+  display: inline-block;
+}
+
+/* line 14, ../../sass/modules/_posts.scss */
+.post-meta {
+  float: right;
+  font-family: 'SlimJoe';
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: right;
+  line-height: 1.2;
+}
+
+/* line 23, ../../sass/modules/_posts.scss */
+.post-body {
+  clear: both;
+  font-size: 1.4em;
+  line-height: 1.2;
+}
+
+/* line 29, ../../sass/modules/_posts.scss */
+.post-actions {
+  font-weight: bold;
+}
+
+/* line 33, ../../sass/modules/_posts.scss */
+.post-meta span {
+  display: block;
+}
+
+/* line 1, ../../sass/modules/_pagination.scss */
+.pagination-container {
+  text-align: center;
+  font-family: 'SlimJoe';
+  font-weight: bold;
+  font-size: 2.4em;
+}
+
+/* line 8, ../../sass/modules/_pagination.scss */
+.pagination {
+  display: inline-block;
+  margin: 0 5em;
+}
+
+/* line 1, ../../sass/modules/_links.scss */
+.active > a:link,
+.active > a:visited {
+  font-weight: bold;
+  color: #D3D3D3;
+}
