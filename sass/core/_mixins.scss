@@ -19,3 +19,12 @@
     line-height: 90%;
     text-shadow: 1px 1px;
 }
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin em-font-size($sizeValue: 1) {
+  font-size: $sizeValue + em;
+}

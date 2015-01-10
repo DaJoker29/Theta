@@ -8,13 +8,13 @@
 
 #site-nav > li {
     margin-top: 10px;
-    border-bottom: 1px solid #B23130;
+    border-bottom: 1px solid $red;
 }
 
 #site-nav > li:hover {
-    border-bottom: 1px dotted #D3D3D3;
+    border-bottom: 1px dotted $light-gray;
 }
 
 #site-nav > .active {
-    border-bottom: 1px solid #D3D3D3;
+    border-bottom: 1px solid $light-gray;
 }

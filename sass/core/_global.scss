@@ -1,7 +1,12 @@
 html {
-    background: #000;
-    color: #D3D3D3;
-    font-family: 'Droid Sans', sans-serif;
+    background: $base-bg-color;
+    color: $base-font-color;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+}
+
+body {
+    font-size: 2.2em;
 }
 
 h1,
@@ -10,12 +15,43 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'BigJohn';
+    font-family: $base-heading-font;
+}
+
+h1 {
+    @include font-size(6.854); // 68.54 / 10
+    // 75 / 68.54
+}
+
+h2 {
+    @include font-size(5.063);
 }
 
 h3 {
-    font-size: 1.4em;
-    text-align: center;
+    @include font-size(3.375);
+}
+
+h4 {
+    @include font-size(2.2);
+}
+
+h5 {
+    @include font-size(1.5);
+}
+
+h6 {
+    @include font-size(1);
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+    @include font-size(2.2);
+}
+
+small {
+    @include font-size(1);
 }
 
 a {
@@ -24,16 +60,10 @@ a {
 
 a:visited,
 a:link {
-    color: #B23130;
+    color: $red;
 }
 
 a:hover,
 a:active {
-    color: #D3D3D3;
-}
-
-p {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: block;
+    color: $light-gray;
 }
