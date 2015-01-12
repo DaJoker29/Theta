@@ -4,10 +4,6 @@
 }
 
 .post-title {
-    @include top-lining;
-}
-
-.post-title {
     display: inline-block;
 }
 
@@ -15,15 +11,12 @@
     float: right;
     font-family: 'SlimJoe';
     font-weight: bold;
-    font-size: 1.2em;
     text-align: right;
-    line-height: 1.2;
 }
 
 .post-body {
     clear: both;
-    font-size: 1.4em;
-    line-height: 1.2; 
+
 }
 
 .post-actions {

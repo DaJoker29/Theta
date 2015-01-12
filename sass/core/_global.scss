@@ -2,11 +2,6 @@ html {
     background: $base-bg-color;
     color: $base-font-color;
     font-family: $base-font-family;
-    font-size: $base-font-size;
-}
-
-body {
-    font-size: 2.2em;
 }
 
 h1,
@@ -19,51 +14,44 @@ h6 {
 }
 
 h1 {
-    @include font-size(6.854); // 68.54 / 10
-    // 75 / 68.54
+    @include adjust-font-size-to($h1-zd);
+    margin: 0 auto rhythm(1, $h1-zd);
 }
 
 h2 {
-    @include font-size(5.063);
+    @include adjust-font-size-to($h2-zd);
+    margin: 0 auto rhythm(1, $h2-zd);
 }
 
 h3 {
-    @include font-size(3.375);
+    @include adjust-font-size-to($h3-zd);
+    margin: 0 auto rhythm(1, $h3-zd);
 }
 
 h4 {
-    @include font-size(2.2);
+    @include adjust-font-size-to($h4-zd);
+    margin: 0 auto rhythm(1, $h4-zd);
 }
 
 h5 {
-    @include font-size(1.5);
+    @include adjust-font-size-to($h5-zd);
+    margin: 0 auto rhythm(1, $h5-zd);
 }
 
 h6 {
-    @include font-size(1);
-}
-
-p {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: block;
-    @include font-size(2.2);
+    @include adjust-font-size-to($h6-zd);
+    margin: 0 auto rhythm(1, $h6-zd);
 }
 
 small {
-    @include font-size(1);
+    @include adjust-font-size-to($small-zd);
 }
 
 a {
     text-decoration: none;
+    @include link-colors($red, $light-gray);
 }
 
-a:visited,
-a:link {
-    color: $red;
-}
-
-a:hover,
-a:active {
-    color: $light-gray;
+p {
+    margin: 0 auto rhythm(1);
 }

@@ -1,10 +1,28 @@
+//Imports
+@import "compass";
+@import "compass/reset";
+
 // Colors
 $black:         #000000;
 $light-gray:    #D3D3D3;
 $red:           #B23130;
 
+// Typography
+$base-font-size: 22px;
+$base-line-height: 30px;
+$round-to-nearest-half-line: true;
+$rhythm-unit: "rem";
+
+//  Scale
+$h1-zd: 57px;
+$h2-zd: 47px;
+$h3-zd: 35px;
+$h4-zd: 29px;
+$h5-zd: 22px;
+$h6-zd: 18px;
+$small-zd: 13px;
+
 // Font
-$base-font-size: 62.5%;
 $base-font-family: 'Droid Sans', sans-serif;
 $base-font-color: $light-gray;
 $base-heading-font: 'BigJohn';
@@ -12,3 +30,6 @@ $base-nav-font: 'SlimJoe';
 
 // Background
 $base-bg-color: $black;
+
+//Vertical Rhythm
+@include establish-baseline;

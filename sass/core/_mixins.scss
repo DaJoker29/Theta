@@ -11,15 +11,6 @@
   }
 }
 
-@mixin top-lining() {
-    text-align: right;
-    font-family: 'BigJohn';
-    font-size: 3em;
-    letter-spacing: -4px;
-    line-height: 90%;
-    text-shadow: 1px 1px;
-}
-
 @mixin font-size($sizeValue: 1.6) {
   font-size: ($sizeValue * 10) + px;
   font-size: $sizeValue + rem;

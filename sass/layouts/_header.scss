@@ -1,11 +1,11 @@
-#site-title {
+.site-title {
     color: $light-gray;
 }
 
-#site-header:hover > #site-tagline{
+#site-header:hover > .site-tagline{
     color: $light-gray;
 }
 
-#site-header:hover > #site-title {
+#site-header:hover > .site-title {
     color: $red;
 }
