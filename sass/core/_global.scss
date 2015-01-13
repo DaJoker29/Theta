@@ -2,6 +2,7 @@ html {
     background: $base-bg-color;
     color: $base-font-color;
     font-family: $base-font-family;
+    @include adjust-leading-to(3);
 }
 
 h1,
@@ -43,15 +44,131 @@ h6 {
     margin: 0 auto rhythm(1, $h6-zd);
 }
 
-small {
-    @include adjust-font-size-to($small-zd);
-}
-
 a {
     text-decoration: none;
     @include link-colors($red, $light-gray);
 }
 
-p {
+b,
+dt,
+th,
+strong {
+    font-weight: bold;
+}
+
+i,
+q,
+em,
+cite,
+caption,
+legend,
+dfn,
+ins {
+    font-style: italic;
+}
+
+u,
+abbr,
+acronym {
+    text-decoration: underline;
+}
+
+p,
+pre,
+blockquote,
+audio,
+video,
+ul,
+ol,
+dl {
     margin: 0 auto rhythm(1);
+}
+
+blockquote {
+    @include apply-side-rhythm-border(left, 2px);
+    border-color: $red;
+}
+
+code,
+kbd,
+pre,
+samp,
+var {
+    font-family: monospace;
+}
+
+mark {
+    background-color: $red;
+    color: $light-gray;   
+}
+
+small,
+sub,
+sup {
+    @include adjust-font-size-to($small-zd);
+}
+
+sub {
+    vertical-align: sub;
+}
+
+sup {
+    vertical-align: super;
+}
+
+pre {
+    @include rhythm-borders;
+    background-color: $light-gray;
+    color: $black;
+    @include force-wrap;
+}
+
+ul,
+ol,
+dl {
+    margin-left: rhythm(2);
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+ol {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+dd {
+    margin-left: rhythm(3);
+}
+
+table {
+    $table-color: $red;
+    @include table-scaffolding;
+    @include inner-table-borders(rhythm(0.3), $light-gray);
+    @include outer-table-borders(rhythm(0.3), $light-gray);
+    @include alternating-rows-and-columns($table-color, complement($table-color), $dark-gray, $table-color);
+}
+    
+
+form {
+    @include rhythm-borders;
+    display: inline-block;
+}
+
+:disabled {
+    background: $dark-gray;
+    border-color: $dark-gray;
+}
+
+button,
+.button {
+    @include rhythm-borders;
+    
+    &[type=submit] {
+        background-color: $red;
+        color: $light-gray;
+        border-color: $red;
+    }
 }
