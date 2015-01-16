@@ -79,7 +79,18 @@ html {
   src: url("../fonts/bj_sj/slim_joe-webfont.eot");
   src: url("../fonts/bj_sj/slim_joe-webfont.eot#iefix") format("embedded-opentype"), url("../fonts/bj_sj/slim_joe-webfont.ttf") format("truetype"), url("../fonts/bj_sj/slim_joe-webfont.svg#SlimJoe") format("svg"), url("../fonts/bj_sj/slim_joe-webfont.woff") format("woff");
 }
-/* line 1, ../../sass/core/_global.scss */
+/* line 53, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/css3/_selection.scss */
+*::-moz-selection {
+  color: #fff;
+  background-color: #B23130;
+}
+/* line 53, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/css3/_selection.scss */
+*::selection {
+  color: #fff;
+  background-color: #B23130;
+}
+
+/* line 5, ../../sass/core/_global.scss */
 html {
   background: #000000;
   color: #D3D3D3;
@@ -88,7 +99,20 @@ html {
   line-height: 1.5rem;
 }
 
-/* line 8, ../../sass/core/_global.scss */
+/* line 12, ../../sass/core/_global.scss */
+body {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2.alpha.1/sass/susy/output/support/_clearfix.scss */
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 16, ../../sass/core/_global.scss */
 h1,
 h2,
 h3,
@@ -98,7 +122,7 @@ h6 {
   font-family: "BigJohn";
 }
 
-/* line 17, ../../sass/core/_global.scss */
+/* line 25, ../../sass/core/_global.scss */
 h1 {
   font-size: 48px;
   font-size: 2.66667rem;
@@ -107,7 +131,7 @@ h1 {
   margin: 0 auto 0.5rem;
 }
 
-/* line 22, ../../sass/core/_global.scss */
+/* line 30, ../../sass/core/_global.scss */
 h2 {
   font-size: 36px;
   font-size: 2rem;
@@ -116,7 +140,7 @@ h2 {
   margin: 0 auto 0.5rem;
 }
 
-/* line 27, ../../sass/core/_global.scss */
+/* line 35, ../../sass/core/_global.scss */
 h3 {
   font-size: 30px;
   font-size: 1.66667rem;
@@ -125,7 +149,7 @@ h3 {
   margin: 0 auto 0.5rem;
 }
 
-/* line 32, ../../sass/core/_global.scss */
+/* line 40, ../../sass/core/_global.scss */
 h4 {
   font-size: 24px;
   font-size: 1.33333rem;
@@ -134,7 +158,7 @@ h4 {
   margin: 0 auto 0.5rem;
 }
 
-/* line 37, ../../sass/core/_global.scss */
+/* line 45, ../../sass/core/_global.scss */
 h5 {
   font-size: 18px;
   font-size: 1rem;
@@ -143,7 +167,7 @@ h5 {
   margin: 0 auto 0.5rem;
 }
 
-/* line 42, ../../sass/core/_global.scss */
+/* line 50, ../../sass/core/_global.scss */
 h6 {
   font-size: 14px;
   font-size: 0.77778rem;
@@ -152,7 +176,7 @@ h6 {
   margin: 0 auto 0.5rem;
 }
 
-/* line 47, ../../sass/core/_global.scss */
+/* line 55, ../../sass/core/_global.scss */
 a {
   text-decoration: none;
   color: #B23130;
@@ -162,7 +186,7 @@ a:hover {
   color: #D3D3D3;
 }
 
-/* line 52, ../../sass/core/_global.scss */
+/* line 60, ../../sass/core/_global.scss */
 b,
 dt,
 th,
@@ -170,7 +194,7 @@ strong {
   font-weight: bold;
 }
 
-/* line 59, ../../sass/core/_global.scss */
+/* line 67, ../../sass/core/_global.scss */
 i,
 q,
 em,
@@ -182,14 +206,14 @@ ins {
   font-style: italic;
 }
 
-/* line 70, ../../sass/core/_global.scss */
+/* line 78, ../../sass/core/_global.scss */
 u,
 abbr,
 acronym {
   text-decoration: underline;
 }
 
-/* line 76, ../../sass/core/_global.scss */
+/* line 84, ../../sass/core/_global.scss */
 p,
 pre,
 blockquote,
@@ -201,7 +225,7 @@ dl {
   margin: 0 auto 0.5rem;
 }
 
-/* line 87, ../../sass/core/_global.scss */
+/* line 95, ../../sass/core/_global.scss */
 blockquote {
   border-left-width: 2px;
   border-left-width: 0.11111rem;
@@ -211,7 +235,7 @@ blockquote {
   border-color: #B23130;
 }
 
-/* line 92, ../../sass/core/_global.scss */
+/* line 100, ../../sass/core/_global.scss */
 code,
 kbd,
 pre,
@@ -220,13 +244,13 @@ var {
   font-family: monospace;
 }
 
-/* line 100, ../../sass/core/_global.scss */
+/* line 108, ../../sass/core/_global.scss */
 mark {
   background-color: #B23130;
   color: #D3D3D3;
 }
 
-/* line 105, ../../sass/core/_global.scss */
+/* line 113, ../../sass/core/_global.scss */
 small,
 sub,
 sup {
@@ -236,17 +260,17 @@ sup {
   line-height: 1rem;
 }
 
-/* line 111, ../../sass/core/_global.scss */
+/* line 119, ../../sass/core/_global.scss */
 sub {
   vertical-align: sub;
 }
 
-/* line 115, ../../sass/core/_global.scss */
+/* line 123, ../../sass/core/_global.scss */
 sup {
   vertical-align: super;
 }
 
-/* line 119, ../../sass/core/_global.scss */
+/* line 127, ../../sass/core/_global.scss */
 pre {
   border-width: 1px;
   border-width: 0.05556rem;
@@ -265,31 +289,31 @@ pre {
   word-wrap: break-word;
 }
 
-/* line 126, ../../sass/core/_global.scss */
+/* line 134, ../../sass/core/_global.scss */
 ul,
 ol,
 dl {
   margin-left: 1rem;
 }
 
-/* line 132, ../../sass/core/_global.scss */
+/* line 140, ../../sass/core/_global.scss */
 ul {
   list-style-type: square;
   list-style-position: inside;
 }
 
-/* line 137, ../../sass/core/_global.scss */
+/* line 145, ../../sass/core/_global.scss */
 ol {
   list-style-type: upper-roman;
   list-style-position: inside;
 }
 
-/* line 142, ../../sass/core/_global.scss */
+/* line 150, ../../sass/core/_global.scss */
 dd {
   margin-left: 1.5rem;
 }
 
-/* line 146, ../../sass/core/_global.scss */
+/* line 154, ../../sass/core/_global.scss */
 table {
   border: 0.15rem solid #D3D3D3;
 }
@@ -353,11 +377,11 @@ table th.even, table th:nth-child(2n) {
 }
 /* line 8, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 table tr.odd td, table tr:nth-child(2n+1) td {
-  background-color: #30b1b2;
+  background-color: #a14241;
 }
 /* line 10, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 table tr.odd td.even, table tr.odd td:nth-child(2n), table tr:nth-child(2n+1) td.even, table tr:nth-child(2n+1) td:nth-child(2n) {
-  background-color: #00292a;
+  background-color: #190000;
 }
 /* line 14, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 table tr.even td {
@@ -376,7 +400,7 @@ table tfoot th.even, table tfoot th:nth-child(2n), table tfoot td.even, table tf
   background-color: #777777;
 }
 
-/* line 155, ../../sass/core/_global.scss */
+/* line 163, ../../sass/core/_global.scss */
 form {
   border-width: 1px;
   border-width: 0.05556rem;
@@ -386,27 +410,10 @@ form {
   display: inline-block;
 }
 
-/* line 160, ../../sass/core/_global.scss */
+/* line 168, ../../sass/core/_global.scss */
 :disabled {
   background: #888;
   border-color: #888;
-}
-
-/* line 165, ../../sass/core/_global.scss */
-button,
-.button {
-  border-width: 1px;
-  border-width: 0.05556rem;
-  border-style: solid;
-  padding: 8px;
-  padding: 0.44444rem;
-}
-/* line 169, ../../sass/core/_global.scss */
-button[type=submit],
-.button[type=submit] {
-  background-color: #B23130;
-  color: #D3D3D3;
-  border-color: #B23130;
 }
 
 /* line 1, ../../sass/layouts/_sidebar.scss */
@@ -480,18 +487,18 @@ footer {
   font-weight: bold;
 }
 
-/* line 1, ../../sass/modules/_posts.scss */
+/* line 1, ../../sass/modules/_post.scss */
 .post {
   margin-bottom: 4em;
   padding: 0 2em 0;
 }
 
-/* line 6, ../../sass/modules/_posts.scss */
+/* line 6, ../../sass/modules/_post.scss */
 .post-title {
   display: inline-block;
 }
 
-/* line 10, ../../sass/modules/_posts.scss */
+/* line 10, ../../sass/modules/_post.scss */
 .post-meta {
   float: right;
   font-family: 'SlimJoe';
@@ -499,17 +506,17 @@ footer {
   text-align: right;
 }
 
-/* line 17, ../../sass/modules/_posts.scss */
+/* line 17, ../../sass/modules/_post.scss */
 .post-body {
   clear: both;
 }
 
-/* line 22, ../../sass/modules/_posts.scss */
+/* line 22, ../../sass/modules/_post.scss */
 .post-actions {
   font-weight: bold;
 }
 
-/* line 26, ../../sass/modules/_posts.scss */
+/* line 26, ../../sass/modules/_post.scss */
 .post-meta span {
   display: block;
 }
@@ -517,7 +524,7 @@ footer {
 /* line 1, ../../sass/modules/_pagination.scss */
 .pagination-container {
   text-align: center;
-  font-family: 'SlimJoe';
+  font-family: "SlimJoe";
   font-weight: bold;
 }
 
@@ -527,9 +534,24 @@ footer {
   margin: 0 5em;
 }
 
-/* line 1, ../../sass/modules/_links.scss */
+/* line 1, ../../sass/modules/_link.scss */
 .active > a:link,
 .active > a:visited {
   font-weight: bold;
   color: #D3D3D3;
+}
+
+/* line 1, ../../sass/modules/_btn.scss */
+.btn {
+  border-width: 1px;
+  border-width: 0.05556rem;
+  border-style: solid;
+  padding: 8px;
+  padding: 0.44444rem;
+}
+/* line 4, ../../sass/modules/_btn.scss */
+.btn[type=submit] {
+  background-color: #B23130;
+  color: #D3D3D3;
+  border-color: #B23130;
 }

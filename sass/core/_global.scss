@@ -1,8 +1,16 @@
+* {
+    @include selection($red);
+}
+
 html {
     background: $base-bg-color;
     color: $base-font-color;
     font-family: $base-font-family;
     @include adjust-leading-to(3);
+}
+
+body {
+    @include container(100%);
 }
 
 h1,
@@ -148,7 +156,7 @@ table {
     @include table-scaffolding;
     @include inner-table-borders(rhythm(0.3), $light-gray);
     @include outer-table-borders(rhythm(0.3), $light-gray);
-    @include alternating-rows-and-columns($table-color, complement($table-color), $dark-gray, $table-color);
+    @include alternating-rows-and-columns($table-color, adjust-saturation($table-color, -15%), $dark-gray, $table-color);
 }
     
 
@@ -162,13 +170,3 @@ form {
     border-color: $dark-gray;
 }
 
-button,
-.button {
-    @include rhythm-borders;
-    
-    &[type=submit] {
-        background-color: $red;
-        color: $light-gray;
-        border-color: $red;
-    }
-}

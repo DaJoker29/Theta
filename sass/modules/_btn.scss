@@ -1,0 +1,9 @@
+.btn {
+    @include rhythm-borders;
+    
+    &[type=submit] {
+        background-color: $red;
+        color: $light-gray;
+        border-color: $red;
+    }
+}

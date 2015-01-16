@@ -1,6 +1,8 @@
-//Imports
-@import "compass";
-@import "compass/reset";
+//Susy
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+);
 
 // Colors
 $black:         #000000;
