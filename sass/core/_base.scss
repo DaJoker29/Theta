@@ -1,9 +1,3 @@
-//Susy
-$susy: (
-  columns: 12,
-  gutters: 1/4,
-);
-
 // Colors
 $black:         #000000;
 $light-gray:    #D3D3D3;
@@ -11,25 +5,27 @@ $dark-gray:     #888;
 $red:           #B23130;
 
 // Typography
-$base-font-size: 18px;
-$base-line-height: 9px;
+$base-font-size:    18px;
+$base-line-height:  9px;
 $round-to-nearest-half-line: true;
-$rhythm-unit: "rem";
+$rhythm-unit:       "rem";
+$default-rhythm-border-width: 2px;
+$default-rhythm-border-style: solid $red;
 
 //  Scale
-$h1-zd: 48px;
-$h2-zd: 36px;
-$h3-zd: 30px;
-$h4-zd: 24px;
-$h5-zd: 18px;
-$h6-zd: 14px;
-$small-zd: 12px;
+$h1-zd:     48px;
+$h2-zd:     36px;
+$h3-zd:     30px;
+$h4-zd:     24px;
+$h5-zd:     18px;
+$h6-zd:     14px;
+$small-zd:  12px;
 
 // Font
-$base-font-family: 'Droid Sans', sans-serif;
-$base-font-color: $light-gray;
+$base-font-family:  'Droid Sans', sans-serif;
+$base-font-color:   $light-gray;
 $base-heading-font: 'BigJohn';
-$base-nav-font: 'SlimJoe';
+$base-nav-font:     'SlimJoe';
 
 // Background
 $base-bg-color: $black;

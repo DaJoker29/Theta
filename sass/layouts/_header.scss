@@ -1,11 +1,4 @@
 .site-title {
-    color: $light-gray;
-}
-
-#site-header:hover > .site-tagline{
-    color: $light-gray;
-}
-
-#site-header:hover > .site-title {
-    color: $red;
+    @include rhythm-borders;
+    text-align: center;
 }

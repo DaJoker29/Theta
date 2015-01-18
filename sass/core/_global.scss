@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    @include container(100%);
+    padding: rhythm(1);
 }
 
 h1,

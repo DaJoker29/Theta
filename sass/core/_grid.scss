@@ -1,0 +1,11 @@
+//Susy
+$susy: (
+  columns: 12,
+  gutters: 1/2,
+  gutter-position: split,
+);
+
+$small-susy: (
+    columns: 6,
+    clean: true,
+)

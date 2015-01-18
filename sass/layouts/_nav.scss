@@ -1,20 +1,21 @@
 #site-nav {
-    margin-top: 42px;
-    font-family: 'SlimJoe';
-    font-size: 2.4em;
+    @include adjust-font-size-to($h2-zd);
+    margin-top: rhythm(3);
+    margin-left: 0; 
+    font-family: $base-nav-font;
     text-align: right;
     list-style-type: none;
 }
 
-#site-nav > li {
-    margin-top: 10px;
-    border-bottom: 1px solid $red;
+.nav-link {
+    @include rhythm-margins;
 }
 
-#site-nav > li:hover {
-    border-bottom: 1px dotted $light-gray;
-}
-
-#site-nav > .active {
-    border-bottom: 1px solid $light-gray;
+.active {
+    border-color: $light-gray;
+    font-weight: bold;
+    
+    a {
+        color: $light-gray;
+    }
 }

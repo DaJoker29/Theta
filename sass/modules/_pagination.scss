@@ -1,10 +1,16 @@
 .pagination-container {
+    @include adjust-font-size-to($h2-zd);
     text-align: center;
     font-family: $base-nav-font;
     font-weight: bold;
 }
 
 .pagination {
-    display: inline-block;
-    margin: 0 5em;
+    @include span(6);
+    @include rhythm-margins(3);
+    @include h-borders;
+}
+
+.next {
+    @include span(6 at 7);
 }

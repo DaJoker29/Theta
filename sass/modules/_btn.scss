@@ -1,9 +1,26 @@
-.btn {
+button,
+.button {
     @include rhythm-borders;
+    @include rhythm-margins;
+    @include adjust-font-size-to($base-font-size);
+    background-color: transparent;
+    color: $red;
+    border-color: $red;
+    cursor: pointer;
+    
+    &:hover {
+        color: $light-gray;
+        border-color: $light-gray; 
+    }
     
     &[type=submit] {
         background-color: $red;
-        color: $light-gray;
+        color: $black;
         border-color: $red;
+        
+        &:hover {
+            color: $light-gray;
+            border-color: $light-gray;
+        }
     }
 }
