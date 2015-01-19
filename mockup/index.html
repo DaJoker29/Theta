@@ -8,23 +8,18 @@
 </head>
 <body>
     <div id="sidebar">
-        <a href="#">
         <header id="site-header">
-            <h1 class="site-title">Theta Blog</h1>
-            <span class="site-tagline">Connect. Develop. Evolve.</span>
+            <a href="#"><h2 class="site-title">Theta Blog</h2></a>
+            <!-- <span class="site-tagline">Connect. Develop. Evolve.</span> -->
         </header>
-        </a>
         <nav>
             <ul id="site-nav">
-                <li class="active"><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#" class="nav-link">About</a></li>
-                <li><a href="#" class="nav-link">Gallery</a></li>
-                <li><a href="#" class="nav-link">Contact</a></li>
+                <li class="active nav-link"><a href="#">Home</a></li>
+                <li class="nav-link"><a href="#">About</a></li>
+                <li class="nav-link"><a href="#">Gallery</a></li>
+                <li class="nav-link"><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <footer id="site-footer">
-            <span><a href="#">Zero Daedalus</a> &copy; 2014-<script type="text/javascript">document.write(new Date().getFullYear());</script></span>
-        </footer>
     </div>
     <div id="content">
         <div class="post">
@@ -83,9 +78,8 @@
                     <span>Fugit sed fuga ratione eos animi atque doloremque repellat dolore!</span>
                 </p>
                 <div class="post-actions">
-                    <span class="post-comment"><a href="#">Comment</a></span>
-                    <span>&nbsp;-&nbsp;</span>
-                    <span class="post-share"><a href="#">Share</a></span>
+                    <button class="post-comment">Comment</button>
+                    <button class="post-share">Share</button>
                 </div>
             </div>
         </div>
@@ -145,9 +139,8 @@
                     <span>Porro eum facere illum sequi tempora cupiditate asperiores excepturi quas?</span>
                 </p>
                 <div class="post-actions">
-                    <span class="post-comment"><a href="#">Comment</a></span>
-                    <span>&nbsp;-&nbsp;</span>
-                    <span class="post-share"><a href="#">Share</a></span>
+                    <button class="post-comment">Comment</button>
+                    <button class="post-share">Share</button>
                 </div>
             </div>
         </div>
@@ -207,9 +200,8 @@
                     <span>Eos commodi quasi iure perferendis consequuntur sapiente magnam ut neque?</span>
                 </p>
                 <div class="post-actions">
-                    <span class="post-comment"><a href="#">Comment</a></span>
-                    <span>&nbsp;-&nbsp;</span>
-                    <span class="post-share"><a href="#">Share</a></span>
+                    <button class="post-comment">Comment</button>
+                    <button class="post-share">Share</button>
                 </div>
             </div>
         </div>
@@ -269,16 +261,18 @@
                     <span>Temporibus earum cumque amet illo autem assumenda voluptas? Magni, quisquam.</span>
                 </p>
                 <div class="post-actions">
-                    <span class="post-comment"><a href="#">Comment</a></span>
-                    <span>&nbsp;-&nbsp;</span>
-                    <span class="post-share"><a href="#">Share</a></span>
+                    <button class="post-comment">Comment</button>
+                    <button class="post-share">Share</button>
                 </div>
             </div>
         </div>
         <div class="pagination-container">
-            <div class="prev pagination"><a href="">Previous</a></div>
-            <div class="next pagination"><a href="">Next</a></div>
+            <span class="prev pagination"><a href="">Previous</a></span>
+            <span class="next pagination"><a href="">Next</a></span>
         </div>
+        <footer id="site-footer">
+            <span><a href="#">Zero Daedalus</a> &copy; 2014-<script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+        </footer>
     </div>
     <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="main.js"></script>

@@ -1,4 +1,6 @@
 #content {
-    margin-left: 250px;
-    padding: 1em;
+    @include rhythm-margins(4);    
+    @include breakpoint($large) {
+        @include span(9 at 4);
+    }
 }

@@ -1,0 +1,95 @@
+/* Breakpoints */
+$small: 480px;
+$medium: 900px;
+$large: 1200px;
+
+/* Global */
+body {
+    @include container(100%);
+}
+
+/* Large Breakpoint and Up */
+@include breakpoint($large) {
+    #sidebar {
+        position: fixed;
+        @include span(3);
+    }
+
+    .nav-link {
+        @include trailing-border;
+        text-align: right;
+    }
+}
+
+/* Medium Breakpoint to Large Breakpoint */
+@include breakpoint($medium $large) {
+    #sidebar {
+        @include span(12);
+    }
+
+    .nav-link {
+        @include span(3);
+        text-align: center;
+    }
+}
+
+/* Medium Breakpoint and Up */
+@include breakpoint ($medium) {
+    .post-title,
+    .post-meta {
+        text-align: center;
+    }
+
+    .post-title {
+        @include span(9);
+    }
+
+    .post-meta {
+        @include span(3 at 10);
+    }
+}
+
+/*
+    Small Breakpoint to Medium Breakpoint
+    6 Column Layout
+*/
+@include breakpoint ($small $medium) {
+    @include with-layout(6) {
+        html {
+            @include adjust-font-size-to(16px);
+        }
+
+        .nav-link {
+            @include span(3);
+            text-align: center;
+        }
+
+        .post-title {
+        }
+    }  
+}
+
+/* 
+    Small Breakpoint and Below
+    3 column layout
+*/
+@include breakpoint (max-width $small) {
+    @include with-layout(3) {
+        html {
+            @include adjust-font-size-to(16px);
+        }
+
+        .nav-link {
+            @include span(3);
+            text-align: center
+        }
+
+        .post-title {
+            @include span(3);
+        }
+
+        .post-meta {
+            @include span(3);
+        }
+    }
+}

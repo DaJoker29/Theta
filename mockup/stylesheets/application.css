@@ -79,7 +79,18 @@ html {
   src: url("../fonts/bj_sj/slim_joe-webfont.eot");
   src: url("../fonts/bj_sj/slim_joe-webfont.eot#iefix") format("embedded-opentype"), url("../fonts/bj_sj/slim_joe-webfont.ttf") format("truetype"), url("../fonts/bj_sj/slim_joe-webfont.svg#SlimJoe") format("svg"), url("../fonts/bj_sj/slim_joe-webfont.woff") format("woff");
 }
-/* line 1, ../../sass/core/_global.scss */
+/* line 53, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/css3/_selection.scss */
+*::-moz-selection {
+  color: #fff;
+  background-color: #B23130;
+}
+/* line 53, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/css3/_selection.scss */
+*::selection {
+  color: #fff;
+  background-color: #B23130;
+}
+
+/* line 5, ../../sass/core/_global.scss */
 html {
   background: #000000;
   color: #D3D3D3;
@@ -88,7 +99,12 @@ html {
   line-height: 1.5rem;
 }
 
-/* line 8, ../../sass/core/_global.scss */
+/* line 12, ../../sass/core/_global.scss */
+body {
+  padding: 0.5rem;
+}
+
+/* line 16, ../../sass/core/_global.scss */
 h1,
 h2,
 h3,
@@ -98,7 +114,7 @@ h6 {
   font-family: "BigJohn";
 }
 
-/* line 17, ../../sass/core/_global.scss */
+/* line 25, ../../sass/core/_global.scss */
 h1 {
   font-size: 48px;
   font-size: 2.66667rem;
@@ -107,7 +123,7 @@ h1 {
   margin: 0 auto 0.5rem;
 }
 
-/* line 22, ../../sass/core/_global.scss */
+/* line 30, ../../sass/core/_global.scss */
 h2 {
   font-size: 36px;
   font-size: 2rem;
@@ -116,7 +132,7 @@ h2 {
   margin: 0 auto 0.5rem;
 }
 
-/* line 27, ../../sass/core/_global.scss */
+/* line 35, ../../sass/core/_global.scss */
 h3 {
   font-size: 30px;
   font-size: 1.66667rem;
@@ -125,7 +141,7 @@ h3 {
   margin: 0 auto 0.5rem;
 }
 
-/* line 32, ../../sass/core/_global.scss */
+/* line 40, ../../sass/core/_global.scss */
 h4 {
   font-size: 24px;
   font-size: 1.33333rem;
@@ -134,7 +150,7 @@ h4 {
   margin: 0 auto 0.5rem;
 }
 
-/* line 37, ../../sass/core/_global.scss */
+/* line 45, ../../sass/core/_global.scss */
 h5 {
   font-size: 18px;
   font-size: 1rem;
@@ -143,7 +159,7 @@ h5 {
   margin: 0 auto 0.5rem;
 }
 
-/* line 42, ../../sass/core/_global.scss */
+/* line 50, ../../sass/core/_global.scss */
 h6 {
   font-size: 14px;
   font-size: 0.77778rem;
@@ -152,7 +168,7 @@ h6 {
   margin: 0 auto 0.5rem;
 }
 
-/* line 47, ../../sass/core/_global.scss */
+/* line 55, ../../sass/core/_global.scss */
 a {
   text-decoration: none;
   color: #B23130;
@@ -162,7 +178,7 @@ a:hover {
   color: #D3D3D3;
 }
 
-/* line 52, ../../sass/core/_global.scss */
+/* line 60, ../../sass/core/_global.scss */
 b,
 dt,
 th,
@@ -170,7 +186,7 @@ strong {
   font-weight: bold;
 }
 
-/* line 59, ../../sass/core/_global.scss */
+/* line 67, ../../sass/core/_global.scss */
 i,
 q,
 em,
@@ -182,14 +198,14 @@ ins {
   font-style: italic;
 }
 
-/* line 70, ../../sass/core/_global.scss */
+/* line 78, ../../sass/core/_global.scss */
 u,
 abbr,
 acronym {
   text-decoration: underline;
 }
 
-/* line 76, ../../sass/core/_global.scss */
+/* line 84, ../../sass/core/_global.scss */
 p,
 pre,
 blockquote,
@@ -201,17 +217,18 @@ dl {
   margin: 0 auto 0.5rem;
 }
 
-/* line 87, ../../sass/core/_global.scss */
+/* line 95, ../../sass/core/_global.scss */
 blockquote {
   border-left-width: 2px;
   border-left-width: 0.11111rem;
   border-left-style: solid;
+  border-left-color: #B23130;
   padding-left: 7px;
   padding-left: 0.38889rem;
   border-color: #B23130;
 }
 
-/* line 92, ../../sass/core/_global.scss */
+/* line 100, ../../sass/core/_global.scss */
 code,
 kbd,
 pre,
@@ -220,13 +237,13 @@ var {
   font-family: monospace;
 }
 
-/* line 100, ../../sass/core/_global.scss */
+/* line 108, ../../sass/core/_global.scss */
 mark {
   background-color: #B23130;
   color: #D3D3D3;
 }
 
-/* line 105, ../../sass/core/_global.scss */
+/* line 113, ../../sass/core/_global.scss */
 small,
 sub,
 sup {
@@ -236,23 +253,24 @@ sup {
   line-height: 1rem;
 }
 
-/* line 111, ../../sass/core/_global.scss */
+/* line 119, ../../sass/core/_global.scss */
 sub {
   vertical-align: sub;
 }
 
-/* line 115, ../../sass/core/_global.scss */
+/* line 123, ../../sass/core/_global.scss */
 sup {
   vertical-align: super;
 }
 
-/* line 119, ../../sass/core/_global.scss */
+/* line 127, ../../sass/core/_global.scss */
 pre {
-  border-width: 1px;
-  border-width: 0.05556rem;
+  border-width: 2px;
+  border-width: 0.11111rem;
   border-style: solid;
-  padding: 8px;
-  padding: 0.44444rem;
+  border-color: #B23130;
+  padding: 7px;
+  padding: 0.38889rem;
   background-color: #D3D3D3;
   color: #000000;
   white-space: pre;
@@ -265,31 +283,31 @@ pre {
   word-wrap: break-word;
 }
 
-/* line 126, ../../sass/core/_global.scss */
+/* line 134, ../../sass/core/_global.scss */
 ul,
 ol,
 dl {
   margin-left: 1rem;
 }
 
-/* line 132, ../../sass/core/_global.scss */
+/* line 140, ../../sass/core/_global.scss */
 ul {
   list-style-type: square;
   list-style-position: inside;
 }
 
-/* line 137, ../../sass/core/_global.scss */
+/* line 145, ../../sass/core/_global.scss */
 ol {
   list-style-type: upper-roman;
   list-style-position: inside;
 }
 
-/* line 142, ../../sass/core/_global.scss */
+/* line 150, ../../sass/core/_global.scss */
 dd {
   margin-left: 1.5rem;
 }
 
-/* line 146, ../../sass/core/_global.scss */
+/* line 154, ../../sass/core/_global.scss */
 table {
   border: 0.15rem solid #D3D3D3;
 }
@@ -353,11 +371,11 @@ table th.even, table th:nth-child(2n) {
 }
 /* line 8, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 table tr.odd td, table tr:nth-child(2n+1) td {
-  background-color: #30b1b2;
+  background-color: #a14241;
 }
 /* line 10, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 table tr.odd td.even, table tr.odd td:nth-child(2n), table tr:nth-child(2n+1) td.even, table tr:nth-child(2n+1) td:nth-child(2n) {
-  background-color: #00292a;
+  background-color: #190000;
 }
 /* line 14, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 table tr.even td {
@@ -376,160 +394,372 @@ table tfoot th.even, table tfoot th:nth-child(2n), table tfoot td.even, table tf
   background-color: #777777;
 }
 
-/* line 155, ../../sass/core/_global.scss */
+/* line 163, ../../sass/core/_global.scss */
 form {
-  border-width: 1px;
-  border-width: 0.05556rem;
+  border-width: 2px;
+  border-width: 0.11111rem;
   border-style: solid;
-  padding: 8px;
-  padding: 0.44444rem;
+  border-color: #B23130;
+  padding: 7px;
+  padding: 0.38889rem;
   display: inline-block;
 }
 
-/* line 160, ../../sass/core/_global.scss */
+/* line 168, ../../sass/core/_global.scss */
 :disabled {
   background: #888;
   border-color: #888;
 }
 
-/* line 165, ../../sass/core/_global.scss */
-button,
-.button {
-  border-width: 1px;
-  border-width: 0.05556rem;
-  border-style: solid;
-  padding: 8px;
-  padding: 0.44444rem;
+/* Breakpoints */
+/* Global */
+/* line 7, ../../sass/core/_responsive.scss */
+body {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 169, ../../sass/core/_global.scss */
-button[type=submit],
-.button[type=submit] {
-  background-color: #B23130;
-  color: #D3D3D3;
-  border-color: #B23130;
+/* line 12, ../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2.alpha.1/sass/susy/output/support/_clearfix.scss */
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* Large Breakpoint and Up */
+@media (min-width: 1200px) {
+  /* line 13, ../../sass/core/_responsive.scss */
+  #sidebar {
+    position: fixed;
+    width: 22.22222%;
+    float: left;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
+  }
+
+  /* line 18, ../../sass/core/_responsive.scss */
+  .nav-link {
+    border-bottom-width: 2px;
+    border-bottom-width: 0.11111rem;
+    border-bottom-style: solid;
+    border-bottom-color: #B23130;
+    padding-bottom: 7px;
+    padding-bottom: 0.38889rem;
+    text-align: right;
+  }
+}
+/* Medium Breakpoint to Large Breakpoint */
+@media (min-width: 900px) and (max-width: 1200px) {
+  /* line 26, ../../sass/core/_responsive.scss */
+  #sidebar {
+    width: 97.22222%;
+    float: left;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
+  }
+
+  /* line 30, ../../sass/core/_responsive.scss */
+  .nav-link {
+    width: 22.22222%;
+    float: left;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
+    text-align: center;
+  }
+}
+/* Medium Breakpoint and Up */
+@media (min-width: 900px) {
+  /* line 38, ../../sass/core/_responsive.scss */
+  .post-title,
+  .post-meta {
+    text-align: center;
+  }
+
+  /* line 43, ../../sass/core/_responsive.scss */
+  .post-title {
+    width: 72.22222%;
+    float: left;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
+  }
+
+  /* line 47, ../../sass/core/_responsive.scss */
+  .post-meta {
+    width: 22.22222%;
+    float: right;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
+  }
+}
+/*
+    Small Breakpoint to Medium Breakpoint
+    6 Column Layout
+*/
+@media (min-width: 480px) and (max-width: 900px) {
+  /* line 58, ../../sass/core/_responsive.scss */
+  html {
+    font-size: 16px;
+    font-size: 0.88889rem;
+    line-height: 23px;
+    line-height: 1.25rem;
+  }
+
+  /* line 62, ../../sass/core/_responsive.scss */
+  .nav-link {
+    width: 44.44444%;
+    float: left;
+    margin-left: 2.77778%;
+    margin-right: 2.77778%;
+    text-align: center;
+  }
+}
+/* 
+    Small Breakpoint and Below
+    3 column layout
+*/
+@media (max-width: 480px) {
+  /* line 78, ../../sass/core/_responsive.scss */
+  html {
+    font-size: 16px;
+    font-size: 0.88889rem;
+    line-height: 23px;
+    line-height: 1.25rem;
+  }
+
+  /* line 82, ../../sass/core/_responsive.scss */
+  .nav-link {
+    width: 88.88889%;
+    float: left;
+    margin-left: 5.55556%;
+    margin-right: 5.55556%;
+    text-align: center;
+  }
+
+  /* line 87, ../../sass/core/_responsive.scss */
+  .post-title {
+    width: 88.88889%;
+    float: left;
+    margin-left: 5.55556%;
+    margin-right: 5.55556%;
+  }
+
+  /* line 91, ../../sass/core/_responsive.scss */
+  .post-meta {
+    width: 88.88889%;
+    float: left;
+    margin-left: 5.55556%;
+    margin-right: 5.55556%;
+  }
+}
+/* line 1, ../../sass/layouts/_content.scss */
+#content {
+  margin-top: 36px;
+  margin-top: 2rem;
+  margin-bottom: 36px;
+  margin-bottom: 2rem;
+}
+@media (min-width: 1200px) {
+  /* line 1, ../../sass/layouts/_content.scss */
+  #content {
+    width: 72.22222%;
+    float: right;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
+  }
 }
 
 /* line 1, ../../sass/layouts/_sidebar.scss */
 #sidebar {
-  padding: 1em;
-  padding-left: 0;
-  margin-right: 20px;
-  position: fixed;
-  width: 250px;
-  max-width: 240px;
   height: 100%;
   overflow: hidden;
 }
 
-/* line 1, ../../sass/layouts/_content.scss */
-#content {
-  margin-left: 250px;
-  padding: 1em;
-}
-
 /* line 1, ../../sass/layouts/_nav.scss */
 #site-nav {
-  margin-top: 42px;
-  font-family: 'SlimJoe';
-  font-size: 2.4em;
+  font-size: 36px;
+  font-size: 2rem;
+  line-height: 41px;
+  line-height: 2.25rem;
+  margin-top: 1.5rem;
+  margin-left: 0;
+  font-family: "SlimJoe";
   text-align: right;
   list-style-type: none;
 }
 
-/* line 9, ../../sass/layouts/_nav.scss */
-#site-nav > li {
-  margin-top: 10px;
-  border-bottom: 1px solid #B23130;
+/* line 10, ../../sass/layouts/_nav.scss */
+.nav-link {
+  margin-top: 9px;
+  margin-top: 0.5rem;
+  margin-bottom: 9px;
+  margin-bottom: 0.5rem;
 }
 
 /* line 14, ../../sass/layouts/_nav.scss */
-#site-nav > li:hover {
-  border-bottom: 1px dotted #D3D3D3;
+.active {
+  border-color: #D3D3D3;
+  font-weight: bold;
 }
-
 /* line 18, ../../sass/layouts/_nav.scss */
-#site-nav > .active {
-  border-bottom: 1px solid #D3D3D3;
+.active a {
+  color: #D3D3D3;
 }
 
 /* line 1, ../../sass/layouts/_header.scss */
 .site-title {
-  color: #D3D3D3;
-}
-
-/* line 5, ../../sass/layouts/_header.scss */
-#site-header:hover > .site-tagline {
-  color: #D3D3D3;
-}
-
-/* line 9, ../../sass/layouts/_header.scss */
-#site-header:hover > .site-title {
-  color: #B23130;
+  border-width: 2px;
+  border-width: 0.11111rem;
+  border-style: solid;
+  border-color: #B23130;
+  padding: 7px;
+  padding: 0.38889rem;
+  text-align: center;
 }
 
 /* line 1, ../../sass/layouts/_footer.scss */
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 80px;
+  clear: both;
+  height: 3rem;
   width: 100%;
-  font-family: 'SlimJoe';
   text-align: center;
-  font-size: 0.8em;
-  font-weight: bold;
+  font-size: 12px;
+  font-size: 0.66667rem;
+  line-height: 18px;
+  line-height: 1rem;
 }
 
-/* line 1, ../../sass/modules/_posts.scss */
+/* line 1, ../../sass/modules/_post.scss */
 .post {
-  margin-bottom: 4em;
-  padding: 0 2em 0;
+  border-top-width: 2px;
+  border-top-width: 0.11111rem;
+  border-top-style: solid;
+  border-top-color: #B23130;
+  padding-top: 7px;
+  padding-top: 0.38889rem;
+  margin-bottom: 90px;
+  margin-bottom: 5rem;
+  clear: both;
+}
+@media (min-width: 1200px) {
+  /* line 8, ../../sass/modules/_post.scss */
+  .post:first-child {
+    border: none;
+  }
 }
 
-/* line 6, ../../sass/modules/_posts.scss */
-.post-title {
-  display: inline-block;
-}
-
-/* line 10, ../../sass/modules/_posts.scss */
-.post-meta {
-  float: right;
-  font-family: 'SlimJoe';
-  font-weight: bold;
-  text-align: right;
-}
-
-/* line 17, ../../sass/modules/_posts.scss */
+/* line 14, ../../sass/modules/_post.scss */
 .post-body {
   clear: both;
 }
 
-/* line 22, ../../sass/modules/_posts.scss */
+/* line 18, ../../sass/modules/_post.scss */
 .post-actions {
   font-weight: bold;
 }
+/* line 21, ../../sass/modules/_post.scss */
+.post-actions button {
+  width: 47.22222%;
+  float: left;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
+}
+/* line 25, ../../sass/modules/_post.scss */
+.post-actions .post-share {
+  width: 47.22222%;
+  float: right;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
+}
 
-/* line 26, ../../sass/modules/_posts.scss */
+/* line 30, ../../sass/modules/_post.scss */
 .post-meta span {
-  display: block;
+  width: 97.22222%;
+  float: left;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
 }
 
 /* line 1, ../../sass/modules/_pagination.scss */
 .pagination-container {
+  font-size: 36px;
+  font-size: 2rem;
+  line-height: 41px;
+  line-height: 2.25rem;
   text-align: center;
-  font-family: 'SlimJoe';
+  font-family: "SlimJoe";
   font-weight: bold;
 }
 
-/* line 7, ../../sass/modules/_pagination.scss */
+/* line 8, ../../sass/modules/_pagination.scss */
 .pagination {
-  display: inline-block;
-  margin: 0 5em;
+  width: 47.22222%;
+  float: left;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
+  margin-top: 27px;
+  margin-top: 1.5rem;
+  margin-bottom: 27px;
+  margin-bottom: 1.5rem;
+  border-top-width: 2px;
+  border-top-width: 0.11111rem;
+  border-top-style: solid;
+  border-top-color: #B23130;
+  padding-top: 7px;
+  padding-top: 0.38889rem;
+  border-bottom-width: 2px;
+  border-bottom-width: 0.11111rem;
+  border-bottom-style: solid;
+  border-bottom-color: #B23130;
+  padding-bottom: 7px;
+  padding-bottom: 0.38889rem;
 }
 
-/* line 1, ../../sass/modules/_links.scss */
-.active > a:link,
-.active > a:visited {
-  font-weight: bold;
+/* line 14, ../../sass/modules/_pagination.scss */
+.next {
+  width: 47.22222%;
+  float: right;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
+}
+
+/* line 1, ../../sass/modules/_btn.scss */
+button,
+.button {
+  border-width: 2px;
+  border-width: 0.11111rem;
+  border-style: solid;
+  border-color: #B23130;
+  padding: 7px;
+  padding: 0.38889rem;
+  margin-top: 9px;
+  margin-top: 0.5rem;
+  margin-bottom: 9px;
+  margin-bottom: 0.5rem;
+  font-size: 18px;
+  font-size: 1rem;
+  line-height: 23px;
+  line-height: 1.25rem;
+  background-color: transparent;
+  color: #B23130;
+  border-color: #B23130;
+  cursor: pointer;
+}
+/* line 11, ../../sass/modules/_btn.scss */
+button:hover,
+.button:hover {
   color: #D3D3D3;
+  border-color: #D3D3D3;
+}
+/* line 16, ../../sass/modules/_btn.scss */
+button[type=submit],
+.button[type=submit] {
+  background-color: #B23130;
+  color: #000000;
+  border-color: #B23130;
+}
+/* line 21, ../../sass/modules/_btn.scss */
+button[type=submit]:hover,
+.button[type=submit]:hover {
+  color: #D3D3D3;
+  border-color: #D3D3D3;
 }

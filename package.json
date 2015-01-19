@@ -1,0 +1,27 @@
+{
+  "name": "Theta",
+  "version": "0.1.0-dev",
+  "description": "A simple WordPress theme from Zero Daedalus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DaJoker29/Theta.git"
+  },
+  "keywords": [
+    "WordPress"
+  ],
+  "author": "Dewitt A. Buckingham, III <captain@zerodaedalus.net> (http://zerodaedalus.com/)",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/DaJoker29/Theta/issues"
+  },
+  "homepage": "https://github.com/DaJoker29/Theta",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

@@ -1,0 +1,32 @@
+.post {
+    @include leading-border;
+    @include margin-trailer(10);
+    // margin-bottom: rhythm(10);
+    clear: both;
+    
+    @include breakpoint($large) {
+        &:first-child {
+            border: none;
+        }
+    }
+}
+
+.post-body {
+    clear: both;
+}
+
+.post-actions {
+    font-weight: bold;
+    
+    button {
+        @include span(6);
+    }
+
+    .post-share {
+        @include span(6 at 7);
+    }
+}
+
+.post-meta span {
+    @include span(12);
+}
