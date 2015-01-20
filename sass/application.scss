@@ -5,6 +5,7 @@
 @import "compass/typography/text";
 @import "compass/css3/selection";
 @import "compass/css3/text-shadow";
+@import "compass/css3/box-shadow";
 @import "compass/utilities/tables";
 @import "susy";
 @import "breakpoint";
@@ -15,7 +16,6 @@
 @import "core/grid";
 @import "core/typography";
 @import "core/global";
-@import "core/responsive";
 
 // Layouts
 @import "layouts/content";
@@ -28,3 +28,7 @@
 @import "modules/post";
 @import "modules/pagination";
 @import "modules/btn";
+@import "modules/comment";
+
+// Media Queries
+@import "core/responsive";

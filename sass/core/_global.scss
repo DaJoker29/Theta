@@ -159,10 +159,25 @@ table {
     @include alternating-rows-and-columns($table-color, adjust-saturation($table-color, -15%), $dark-gray, $table-color);
 }
     
-
-form {
+form,
+textarea,
+input,
+select {
     @include rhythm-borders;
-    display: inline-block;
+}
+
+textarea,
+input,
+select {
+    background: $light-gray;
+    color: $black; 
+    resize: none;
+    overflow: auto;
+    font-family: $base-font-family;
+}
+
+textarea {
+    box-sizing: border-box;
 }
 
 :disabled {
@@ -170,3 +185,6 @@ form {
     border-color: $dark-gray;
 }
 
+:focus {
+    outline: none;
+}

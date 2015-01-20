@@ -1,6 +1,6 @@
 .post {
     @include leading-border;
-    @include margin-trailer(10);
+    @include margin-trailer(8);
     // margin-bottom: rhythm(10);
     clear: both;
     
@@ -19,14 +19,15 @@
     font-weight: bold;
     
     button {
-        @include span(6);
-    }
-
-    .post-share {
-        @include span(6 at 7);
+        @include span(3);
     }
 }
 
 .post-meta span {
     @include span(12);
+    font-family: $base-heading-font; 
+}
+
+.post-delete {
+    @include danger;
 }

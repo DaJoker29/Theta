@@ -1,12 +1,9 @@
-/* Breakpoints */
-$small: 480px;
-$medium: 900px;
-$large: 1200px;
-
 /* Global */
 body {
     @include container(100%);
 }
+
+
 
 /* Large Breakpoint and Up */
 @include breakpoint($large) {
@@ -70,7 +67,7 @@ body {
 }
 
 /* 
-    Small Breakpoint and Below
+    Tiny breakpoint to Small Breakpoint
     3 column layout
 */
 @include breakpoint (max-width $small) {
@@ -80,15 +77,16 @@ body {
         }
 
         .nav-link {
-            @include span(3);
             text-align: center
         }
 
-        .post-title {
-            @include span(3);
-        }
-
-        .post-meta {
+        .nav-link,
+        .post-title,
+        .post-meta,
+        .comment-author,
+        .comment-date,
+        .post-actions button,
+        .comment-actions button {
             @include span(3);
         }
     }

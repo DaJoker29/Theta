@@ -1,0 +1,53 @@
+.comments-container {
+    @include container(90%);
+    @include rhythm-margins;
+    clear: both;
+}
+
+.comments-heading {
+    text-align: right;
+}
+
+.post-comments {
+    @include rhythm-margins;
+    @include adjust-font-size-to($h6-zd);
+    border-color: $light-gray; 
+}
+
+.comment {
+    @include rhythm-padding;
+    @include rhythm-borders;
+    border-color: $red;
+    border-bottom: 0;
+    
+    &:last-child {
+        @include trailing-border;
+    }
+        
+    &:nth-child(even) {
+        background: $dark-gray;
+        color: $black;
+    }
+}
+
+.comment-meta {
+    font-family: $base-heading-font;
+}
+
+.comment-author {
+    @include span(9);
+}
+
+.comment-date {
+    @include span(3 at 10);
+}
+
+.comment-reply {
+    @include span(4 at 9);
+    @include danger;
+}
+
+.comment-input {
+    @include span(12);
+    @include rhythm-margins;
+}
