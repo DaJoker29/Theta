@@ -479,16 +479,6 @@ textarea {
   margin-bottom: 0.5rem;
 }
 
-/* line 14, ../../sass/layouts/_nav.scss */
-.active {
-  border-color: #D3D3D3;
-  font-weight: bold;
-}
-/* line 18, ../../sass/layouts/_nav.scss */
-.active a {
-  color: #D3D3D3;
-}
-
 /* line 1, ../../sass/layouts/_header.scss */
 .site-title {
   border-width: 2px;
@@ -525,22 +515,22 @@ footer {
   clear: both;
 }
 @media (min-width: 1200px) {
-  /* line 8, ../../sass/modules/_post.scss */
+  /* line 7, ../../sass/modules/_post.scss */
   .post:first-child {
     border: none;
   }
 }
 
-/* line 14, ../../sass/modules/_post.scss */
+/* line 13, ../../sass/modules/_post.scss */
 .post-body {
   clear: both;
 }
 
-/* line 18, ../../sass/modules/_post.scss */
+/* line 17, ../../sass/modules/_post.scss */
 .post-actions {
   font-weight: bold;
 }
-/* line 21, ../../sass/modules/_post.scss */
+/* line 20, ../../sass/modules/_post.scss */
 .post-actions button {
   width: 22.22222%;
   float: left;
@@ -548,7 +538,7 @@ footer {
   margin-right: 1.38889%;
 }
 
-/* line 26, ../../sass/modules/_post.scss */
+/* line 25, ../../sass/modules/_post.scss */
 .post-meta span {
   width: 97.22222%;
   float: left;
@@ -557,7 +547,7 @@ footer {
   font-family: "BigJohn";
 }
 
-/* line 31, ../../sass/modules/_post.scss */
+/* line 30, ../../sass/modules/_post.scss */
 .post-delete {
   background-color: #B23130;
   color: #000000;
@@ -901,4 +891,24 @@ body:after {
     margin-left: 5.55556%;
     margin-right: 5.55556%;
   }
+}
+/* line 1, ../../sass/state/_state.scss */
+.hover {
+  border-color: #D3D3D3;
+  border-style: dotted;
+}
+
+/* line 6, ../../sass/state/_state.scss */
+.active {
+  border-color: #D3D3D3;
+  font-weight: bold;
+}
+/* line 10, ../../sass/state/_state.scss */
+.active a {
+  color: #D3D3D3;
+}
+
+/* line 15, ../../sass/state/_state.scss */
+.light {
+  border-color: #D3D3D3;
 }

@@ -21,3 +21,7 @@
         border-color: $light-gray;
     }
 }
+
+@mixin light-borders {
+  border-color: $light-gray; 
+}

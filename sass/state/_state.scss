@@ -1,0 +1,17 @@
+.hover {
+    @include light-borders;
+    border-style: dotted;
+}
+
+.active {
+    @include light-borders;
+    font-weight: bold;
+    
+    a {
+        color: $light-gray;
+    }
+}
+
+.light {
+    @include light-borders;
+}

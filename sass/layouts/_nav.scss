@@ -10,12 +10,3 @@
 .nav-link {
     @include rhythm-margins;
 }
-
-.active {
-    border-color: $light-gray;
-    font-weight: bold;
-    
-    a {
-        color: $light-gray;
-    }
-}

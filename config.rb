@@ -8,7 +8,6 @@ http_path = "/"
 css_dir = "mockup/stylesheets"
 sass_dir = "sass"
 images_dir = "mockup/images"
-javascripts_dir = "mockup/stylesheets"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed

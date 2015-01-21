@@ -1,7 +1,6 @@
 .post {
     @include leading-border;
     @include margin-trailer(8);
-    // margin-bottom: rhythm(10);
     clear: both;
     
     @include breakpoint($large) {
