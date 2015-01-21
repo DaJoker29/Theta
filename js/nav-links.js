@@ -1,11 +1,8 @@
 /*  
-
     Fixes navigation links with borders.
     Hovering over the link now changes
     the color of the border as well.
-
-    Lights them up like a Christmas tree!
-
+    Light them up like a Christmas tree!
 */
 
 function christmas(obj, state, parent) {
@@ -39,10 +36,10 @@ function christmas(obj, state, parent) {
     }
 }
 
-/*
-    On Ready, where most of the code belongs
-*/
 
+/*
+    Load it up
+*/
 $(document).ready(function() {
     /*  Change borders on navigation links  */
     christmas(null, 'hover', '.nav-link');

@@ -30,8 +30,6 @@
 @import "modules/btn";
 @import "modules/comment";
 
-// Media Queries
-@import "core/responsive";
-
 // State
-@import "state/state";
+@import "state/display";
+@import "state/responsive";

@@ -23,5 +23,5 @@
 }
 
 @mixin light-borders {
-  border-color: $light-gray; 
+  border-color: $light-gray !important; 
 }

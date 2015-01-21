@@ -1,6 +1,6 @@
 .hover {
     @include light-borders;
-    border-style: dotted;
+    border-style: dotted !important;
 }
 
 .active {
@@ -14,4 +14,14 @@
 
 .light {
     @include light-borders;
+}
+
+
+:disabled {
+    background: $dark-gray;
+    border-color: $dark-gray;
+}
+
+:focus {
+    outline: none;
 }

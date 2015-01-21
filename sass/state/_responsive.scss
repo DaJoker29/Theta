@@ -3,11 +3,11 @@ body {
     @include container(100%);
 }
 
-
-
-/* Large Breakpoint and Up */
+/*
+    Large+
+*/
 @include breakpoint($large) {
-    #sidebar {
+    .sidebar {
         position: fixed;
         @include span(3);
     }
@@ -18,9 +18,11 @@ body {
     }
 }
 
-/* Medium Breakpoint to Large Breakpoint */
+/*
+     Medium to Large
+*/
 @include breakpoint($medium $large) {
-    #sidebar {
+    .sidebar {
         @include span(12);
     }
 
@@ -30,7 +32,9 @@ body {
     }
 }
 
-/* Medium Breakpoint and Up */
+/*
+    Medium+
+*/
 @include breakpoint ($medium) {
     .post-title,
     .post-meta {
@@ -47,7 +51,7 @@ body {
 }
 
 /*
-    Small Breakpoint to Medium Breakpoint
+    Small to Medium
     6 Column Layout
 */
 @include breakpoint ($small $medium) {
@@ -67,7 +71,7 @@ body {
 }
 
 /* 
-    Tiny breakpoint to Small Breakpoint
+    -Small
     3 column layout
 */
 @include breakpoint (max-width $small) {
@@ -83,6 +87,7 @@ body {
         .nav-link,
         .post-title,
         .post-meta,
+        .pagination,
         .comment-author,
         .comment-date,
         .post-actions button,

@@ -13,6 +13,10 @@ body {
     padding: rhythm(1);
 }
 
+header {
+    font-family: $base-heading-font;
+}
+
 h1,
 h2,
 h3,
@@ -178,13 +182,4 @@ select {
 
 textarea {
     box-sizing: border-box;
-}
-
-:disabled {
-    background: $dark-gray;
-    border-color: $dark-gray;
-}
-
-:focus {
-    outline: none;
 }

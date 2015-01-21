@@ -14,12 +14,15 @@ module.exports = function(grunt) {
                 livereload: true,
             },
             sass: {
-                files: ['sass/**/*.scss', '**/*.html'],
+                files: ['sass/**/*.scss'],
                 tasks: ['compass'],
             },
             js: {
                 files: ['js/**/*.js'],
                 tasks: ['js-build'],
+            },
+            html: {
+                files: ['mockup/**/*.php', 'mockup/**/*.html'],
             }
         },
         concat: {

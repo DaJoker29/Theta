@@ -1,4 +1,4 @@
-.comments-container {
+.comments {
     @include container(90%);
     @include rhythm-margins;
     clear: both;
@@ -28,10 +28,6 @@
         background: $dark-gray;
         color: $black;
     }
-}
-
-.comment-meta {
-    font-family: $base-heading-font;
 }
 
 .comment-author {

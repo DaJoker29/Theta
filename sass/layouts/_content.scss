@@ -1,4 +1,4 @@
-#content {
+.content {
     @include rhythm-margins(4);    
     @include breakpoint($large) {
         @include span(9 at 4);

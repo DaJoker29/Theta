@@ -1,7 +1,15 @@
-footer {
+.site-footer {
     clear: both;
     height: rhythm(6);
     width: 100%;
     text-align: center;
     @include adjust-font-size-to($small-zd);
+    
+    @include breakpoint($large) {
+        @include span(9 at 4);
+    }
+
+    @include breakpoint(max-width $large) {
+        @include span(12);
+    }
 }
