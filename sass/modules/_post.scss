@@ -2,12 +2,6 @@
     @include leading-border;
     @include margin-trailer(8);
     clear: both;
-    
-    @include breakpoint($large) {
-        &:first-child {
-            border: none;
-        }
-    }
 }
 
 .post-body {

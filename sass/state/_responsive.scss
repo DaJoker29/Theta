@@ -16,6 +16,12 @@ body {
         @include trailing-border;
         text-align: right;
     }
+    
+    // Removes Border separator on above large breakpoint
+    .post:first-child,
+    .front-page {
+        border: none;
+    }
 }
 
 /*
@@ -36,9 +42,8 @@ body {
     Medium+
 */
 @include breakpoint ($medium) {
-    .post-title,
-    .post-meta {
-        text-align: center;
+    .front-page-title {
+        @include span(12);
     }
 
     .post-title {
@@ -63,9 +68,6 @@ body {
         .nav-link {
             @include span(3);
             text-align: center;
-        }
-
-        .post-title {
         }
     }  
 }

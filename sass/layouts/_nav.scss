@@ -9,4 +9,8 @@
 
 .nav-link {
     @include rhythm-margins;
+    
+    a {
+        display: block;
+    }
 }
