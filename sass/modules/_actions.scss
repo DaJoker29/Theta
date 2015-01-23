@@ -1,0 +1,10 @@
+.actions {
+    font-weight: bold;
+    
+    button {
+        @include span(3);
+    }
+}
+.delete {
+    @include danger;
+}

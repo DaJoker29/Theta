@@ -2,3 +2,22 @@
     @include leading-border;
     clear: both;
 }
+
+.front-page-body {
+    clear: both;
+}
+
+.intro-col {
+    @include rhythm-margins(5);
+    text-align: center;
+    @include h-borders;
+    border-width: rhythm(1);
+    
+    &:nth-child(odd) {
+        color: $red;
+    }
+
+    &:nth-child(even) {
+        border-color: $light-gray;
+    }
+}

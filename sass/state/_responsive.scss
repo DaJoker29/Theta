@@ -16,6 +16,10 @@ body {
         @include trailing-border;
         text-align: right;
     }
+
+    .intro-col {
+        margin-top: 0;
+    }
     
     // Removes Border separator on above large breakpoint
     .post:first-child,
@@ -46,6 +50,16 @@ body {
         @include span(12);
     }
 
+    .intro {
+        display: flex;
+    }
+
+    @include with-layout(inside) {
+        .intro-col {
+            @include span(4);
+        }
+    }
+
     .post-title {
         @include span(9);
     }
@@ -63,6 +77,10 @@ body {
     @include with-layout(6) {
         html {
             @include adjust-font-size-to(16px);
+        }
+
+        .intro {
+            @include span(6);
         }
 
         .nav-link {
@@ -87,6 +105,7 @@ body {
         }
 
         .nav-link,
+        .intro-col,
         .post-title,
         .post-meta,
         .pagination,

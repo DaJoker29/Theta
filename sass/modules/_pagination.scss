@@ -13,4 +13,14 @@
 
 .next {
     @include span(6 at 7);
+    
+    a:after {
+        @include unicode("\21E8", $h2-zd);
+        padding-left: rhythm(2);
+    }
+}
+
+.prev a:before {
+    @include unicode("\21E6", $h2-zd);
+    padding-right: rhythm(2);
 }

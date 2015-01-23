@@ -25,3 +25,10 @@
 @mixin light-borders {
   border-color: $light-gray !important; 
 }
+
+@mixin unicode ($symbol: $theta, $size: $base-font-size, $display: inline-block, $rhythm: 1) {
+    content: $symbol;
+    @include adjust-font-size-to($size);
+    display: $display;
+    @include rhythm-padding($rhythm); 
+}

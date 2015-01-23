@@ -8,19 +8,7 @@
     clear: both;
 }
 
-.post-actions {
-    font-weight: bold;
-    
-    button {
-        @include span(3);
-    }
-}
-
 .post-meta span {
     @include span(12);
     font-family: $base-heading-font; 
-}
-
-.post-delete {
-    @include danger;
 }

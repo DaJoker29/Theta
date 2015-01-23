@@ -1,4 +1,4 @@
-<!-- Front Page Body -->
+<!-- Text Body -->
 <p>
     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consectetur repellat modi atque voluptate repellendus a necessitatibus dolores dolore nulla quam voluptatibus, maiores aliquid molestiae suscipit. Neque deleniti, quisquam commodi.</span>
     <span>Sit quae similique nostrum quos obcaecati veritatis animi unde impedit dolorem ut consequuntur, ad quam quibusdam cumque nulla labore, nam iure, tenetur porro quidem enim. Vero reiciendis, error sit earum?</span>
@@ -25,6 +25,6 @@
     <span>Consequatur optio recusandae neque molestias quasi dolorum, laudantium praesentium tenetur eum, excepturi laborum saepe unde soluta, maxime. Quo dignissimos quae numquam quis. Vero voluptatem ab quos laboriosam, nemo ratione, ipsa!</span>
 </p>
 <h3>Subheading</h3>
-<p>Lorem ipsum.</p>
-<p>Corrupti, laudantium!</p>
-<p>Labore, culpa.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, hic eos reprehenderit voluptate eligendi id, consequatur assumenda non culpa dolore. Non nisi odio minus tempore veritatis illo nulla culpa minima.</p>
+<p>Consequatur a velit ipsa, ex repellat delectus omnis quasi eum suscipit quo, sint porro aspernatur voluptates quia consectetur animi magni! Qui rerum dicta repellendus deleniti earum. Repudiandae ut, a voluptate.</p>
+<p>Itaque nobis, fugiat neque quae qui sequi laudantium ea amet quo ipsum eos alias magnam tenetur in. Quidem ut voluptatum in facilis maiores doloremque minus atque quae iusto laudantium. Rerum!</p>

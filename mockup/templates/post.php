@@ -1,7 +1,9 @@
 <!-- Post -->
 <article class="post">
     <?php include 'post-heading.php'; ?>
-    <?php include 'post-body-text.php'; ?>
-    <?php include 'post-actions.php'; ?>
+    <div class="post-body">
+        <?php include 'text-body.php'; ?>
+    </div>
+    <?php include 'actions.php'; ?>
     <?php include 'comments.php'; ?>
 </article>
