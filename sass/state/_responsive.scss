@@ -66,7 +66,7 @@ body {
     }
 
     .post-meta {
-        @include span(3 at 10);
+        @include span(3);
     }
 }
 
@@ -106,6 +106,7 @@ body {
         }
 
         .nav-link,
+        .gallery-img,
         .intro-col,
         .post-title,
         .post-meta,

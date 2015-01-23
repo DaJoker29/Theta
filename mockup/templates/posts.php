@@ -1,5 +1,5 @@
 <!-- Posts -->
-<div class="post-container">
+<div class="posts">
     <?php include 'post.php'; ?>
     <?php include 'post.php'; ?>
     <?php include 'post.php'; ?>

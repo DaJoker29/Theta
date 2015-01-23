@@ -1,0 +1,1 @@
+<img class="gallery-img" src="http://placehold.it/350" alt="Placeholder Image">

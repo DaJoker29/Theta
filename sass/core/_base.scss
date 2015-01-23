@@ -4,8 +4,13 @@ $light-gray:    #D3D3D3;
 $dark-gray:     #888;
 $red:           #B23130;
 
-// Unicode
-$theta:         "\03B8";
+/* 
+    Unicode
+    
+    \0398 for lowercase theta;
+    \03B8 for uppercase theta;
+ */
+$theta:         "\0398";
 
 /* Breakpoints */
 $small:         480px;

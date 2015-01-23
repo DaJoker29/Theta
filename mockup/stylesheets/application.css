@@ -64,6 +64,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* 
+    Unicode
+    
+    \0398 for lowercase theta;
+    \03B8 for uppercase theta;
+ */
 /* Breakpoints */
 /* line 106, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
@@ -562,6 +568,63 @@ textarea {
   clear: both;
 }
 
+/* line 1, ../../sass/layouts/_gallery.scss */
+.gallery-item {
+  width: 97.22222%;
+  float: left;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
+  padding-top: 18px;
+  padding-top: 1rem;
+  padding-bottom: 18px;
+  padding-bottom: 1rem;
+  border-left-width: 2px;
+  border-left-width: 0.11111rem;
+  border-left-style: solid;
+  border-left-color: #B23130;
+  padding-left: 7px;
+  padding-left: 0.38889rem;
+  margin-top: 18px;
+  margin-top: 1rem;
+  margin-bottom: 18px;
+  margin-bottom: 1rem;
+}
+/* line 7, ../../sass/layouts/_gallery.scss */
+.gallery-item:hover {
+  border-color: #D3D3D3;
+  background-color: rgba(211, 211, 211, 0.05);
+}
+/* line 11, ../../sass/layouts/_gallery.scss */
+.gallery-item:hover .img-caption {
+  color: #888;
+}
+
+/* line 17, ../../sass/layouts/_gallery.scss */
+.gallery-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* line 26, ../../sass/layouts/_gallery.scss */
+.img-caption {
+  font-size: 14px;
+  font-size: 0.77778rem;
+  line-height: 18px;
+  line-height: 1rem;
+  margin-top: 9px;
+  margin-top: 0.5rem;
+  margin-bottom: 9px;
+  margin-bottom: 0.5rem;
+  width: 97.22222%;
+  float: left;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
+}
+
 /* line 1, ../../sass/modules/_post.scss */
 .post {
   border-top-width: 2px;
@@ -745,6 +808,9 @@ button[type=submit]:hover,
 
 /* line 17, ../../sass/modules/_comment.scss */
 .comment {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 9px;
   padding-top: 0.5rem;
   padding-bottom: 9px;
@@ -758,7 +824,13 @@ button[type=submit]:hover,
   border-color: #B23130;
   border-bottom: 0;
 }
-/* line 23, ../../sass/modules/_comment.scss */
+/* line 12, ../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2.alpha.1/sass/susy/output/support/_clearfix.scss */
+.comment:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 24, ../../sass/modules/_comment.scss */
 .comment:last-child {
   border-bottom-width: 2px;
   border-bottom-width: 0.11111rem;
@@ -767,13 +839,13 @@ button[type=submit]:hover,
   padding-bottom: 7px;
   padding-bottom: 0.38889rem;
 }
-/* line 27, ../../sass/modules/_comment.scss */
+/* line 28, ../../sass/modules/_comment.scss */
 .comment:nth-child(even) {
   background: #888;
   color: #000000;
 }
 
-/* line 33, ../../sass/modules/_comment.scss */
+/* line 34, ../../sass/modules/_comment.scss */
 .comment-author {
   width: 72.22222%;
   float: left;
@@ -781,18 +853,18 @@ button[type=submit]:hover,
   margin-right: 1.38889%;
 }
 
-/* line 37, ../../sass/modules/_comment.scss */
+/* line 38, ../../sass/modules/_comment.scss */
 .comment-date {
   width: 22.22222%;
-  float: right;
+  float: left;
   margin-left: 1.38889%;
   margin-right: 1.38889%;
 }
 
-/* line 41, ../../sass/modules/_comment.scss */
+/* line 42, ../../sass/modules/_comment.scss */
 .comment-reply {
-  width: 30.55556%;
-  float: right;
+  width: 22.22222%;
+  float: left;
   margin-left: 1.38889%;
   margin-right: 1.38889%;
   background-color: #B23130;
@@ -805,7 +877,7 @@ button[type=submit]:hover,
   border-color: #D3D3D3;
 }
 
-/* line 46, ../../sass/modules/_comment.scss */
+/* line 47, ../../sass/modules/_comment.scss */
 .comment-input {
   width: 97.22222%;
   float: left;
@@ -817,6 +889,19 @@ button[type=submit]:hover,
   margin-bottom: 0.5rem;
 }
 
+/* line 52, ../../sass/modules/_comment.scss */
+.comment-actions {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2.alpha.1/sass/susy/output/support/_clearfix.scss */
+.comment-actions:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
 /* line 1, ../../sass/modules/_actions.scss */
 .actions {
   font-weight: bold;
@@ -824,16 +909,16 @@ button[type=submit]:hover,
 /* line 3, ../../sass/modules/_actions.scss */
 .actions button {
   width: 22.22222%;
-  float: left;
-  margin-left: 1.38889%;
+  float: right;
   margin-right: 1.38889%;
+  margin-left: 1.38889%;
   margin-top: 18px;
   margin-top: 1rem;
   margin-bottom: 18px;
   margin-bottom: 1rem;
 }
 
-/* line 8, ../../sass/modules/_actions.scss */
+/* line 10, ../../sass/modules/_actions.scss */
 .delete {
   background-color: #B23130;
   color: #000000;
@@ -847,7 +932,7 @@ button[type=submit]:hover,
 
 /* line 1, ../../sass/theme/_theta.scss */
 .intro-col:before {
-  content: "θ";
+  content: "Θ";
   font-size: 54px;
   font-size: 3rem;
   line-height: 59px;
@@ -1001,7 +1086,7 @@ body:after {
   /* line 68, ../../sass/state/_responsive.scss */
   .post-meta {
     width: 22.22222%;
-    float: right;
+    float: left;
     margin-left: 1.38889%;
     margin-right: 1.38889%;
   }
@@ -1056,6 +1141,7 @@ body:after {
 
   /* line 108, ../../sass/state/_responsive.scss */
   .nav-link,
+  .gallery-img,
   .intro-col,
   .post-title,
   .post-meta,

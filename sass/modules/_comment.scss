@@ -11,10 +11,11 @@
 .post-comments {
     @include rhythm-margins;
     @include adjust-font-size-to($h6-zd);
-    border-color: $light-gray; 
+    border-color: $light-gray;
 }
 
 .comment {
+    @include container(90%);
     @include rhythm-padding;
     @include rhythm-borders;
     border-color: $red;
@@ -35,15 +36,19 @@
 }
 
 .comment-date {
-    @include span(3 at 10);
+    @include span(3);
 }
 
 .comment-reply {
-    @include span(4 at 9);
+    @include span(3);
     @include danger;
 }
 
 .comment-input {
     @include span(12);
     @include rhythm-margins;
+}
+
+.comment-actions {
+    @include container(90%);
 }
