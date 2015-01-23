@@ -449,6 +449,14 @@ textarea {
 
 /* line 1, ../../sass/layouts/_sidebar.scss */
 .sidebar {
+  border-bottom-width: 2px;
+  border-bottom-width: 0.11111rem;
+  border-bottom-style: solid;
+  border-bottom-color: #B23130;
+  padding-bottom: 7px;
+  padding-bottom: 0.38889rem;
+  margin-bottom: 18px;
+  margin-bottom: 1rem;
   height: 100%;
   overflow: hidden;
 }
@@ -520,22 +528,6 @@ textarea {
 }
 
 /* line 1, ../../sass/layouts/_front-page.scss */
-.front-page {
-  border-top-width: 2px;
-  border-top-width: 0.11111rem;
-  border-top-style: solid;
-  border-top-color: #B23130;
-  padding-top: 7px;
-  padding-top: 0.38889rem;
-  clear: both;
-}
-
-/* line 6, ../../sass/layouts/_front-page.scss */
-.front-page-body {
-  clear: both;
-}
-
-/* line 10, ../../sass/layouts/_front-page.scss */
 .intro-col {
   margin-top: 45px;
   margin-top: 2.5rem;
@@ -556,13 +548,18 @@ textarea {
   padding-bottom: 0.38889rem;
   border-width: 0.5rem;
 }
-/* line 16, ../../sass/layouts/_front-page.scss */
+/* line 7, ../../sass/layouts/_front-page.scss */
 .intro-col:nth-child(odd) {
   color: #B23130;
 }
-/* line 20, ../../sass/layouts/_front-page.scss */
+/* line 11, ../../sass/layouts/_front-page.scss */
 .intro-col:nth-child(even) {
   border-color: #D3D3D3;
+}
+
+/* line 16, ../../sass/layouts/_front-page.scss */
+.intro {
+  clear: both;
 }
 
 /* line 1, ../../sass/modules/_post.scss */
@@ -577,13 +574,17 @@ textarea {
   margin-bottom: 4rem;
   clear: both;
 }
+/* line 6, ../../sass/modules/_post.scss */
+.post:first-child {
+  border: none;
+}
 
-/* line 7, ../../sass/modules/_post.scss */
+/* line 11, ../../sass/modules/_post.scss */
 .post-body {
   clear: both;
 }
 
-/* line 11, ../../sass/modules/_post.scss */
+/* line 15, ../../sass/modules/_post.scss */
 .post-meta span {
   width: 97.22222%;
   float: left;
@@ -711,10 +712,10 @@ button[type=submit]:hover,
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 9px;
-  margin-top: 0.5rem;
-  margin-bottom: 9px;
-  margin-bottom: 0.5rem;
+  margin-top: 45px;
+  margin-top: 2.5rem;
+  margin-bottom: 45px;
+  margin-bottom: 2.5rem;
   clear: both;
 }
 /* line 12, ../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2.alpha.1/sass/susy/output/support/_clearfix.scss */
@@ -820,12 +821,16 @@ button[type=submit]:hover,
 .actions {
   font-weight: bold;
 }
-/* line 4, ../../sass/modules/_actions.scss */
+/* line 3, ../../sass/modules/_actions.scss */
 .actions button {
   width: 22.22222%;
   float: left;
   margin-left: 1.38889%;
   margin-right: 1.38889%;
+  margin-top: 18px;
+  margin-top: 1rem;
+  margin-bottom: 18px;
+  margin-bottom: 1rem;
 }
 
 /* line 8, ../../sass/modules/_actions.scss */
@@ -911,9 +916,10 @@ body:after {
     float: left;
     margin-left: 1.38889%;
     margin-right: 1.38889%;
+    border: 0;
   }
 
-  /* line 15, ../../sass/state/_responsive.scss */
+  /* line 16, ../../sass/state/_responsive.scss */
   .nav-link {
     border-bottom-width: 2px;
     border-bottom-width: 0.11111rem;
@@ -924,14 +930,14 @@ body:after {
     text-align: right;
   }
 
-  /* line 20, ../../sass/state/_responsive.scss */
+  /* line 21, ../../sass/state/_responsive.scss */
   .intro-col {
     margin-top: 0;
   }
 
-  /* line 25, ../../sass/state/_responsive.scss */
-  .post:first-child,
-  .front-page {
+  /* line 26, ../../sass/state/_responsive.scss */
+  .page,
+  .intro {
     border: none;
   }
 }
@@ -939,7 +945,7 @@ body:after {
      Medium to Large
 */
 @media (min-width: 900px) and (max-width: 1200px) {
-  /* line 35, ../../sass/state/_responsive.scss */
+  /* line 36, ../../sass/state/_responsive.scss */
   .sidebar {
     width: 97.22222%;
     float: left;
@@ -947,9 +953,9 @@ body:after {
     margin-right: 1.38889%;
   }
 
-  /* line 39, ../../sass/state/_responsive.scss */
+  /* line 40, ../../sass/state/_responsive.scss */
   .nav-link {
-    width: 22.22222%;
+    width: 30.55556%;
     float: left;
     margin-left: 1.38889%;
     margin-right: 1.38889%;
@@ -960,20 +966,20 @@ body:after {
     Medium+
 */
 @media (min-width: 900px) {
-  /* line 49, ../../sass/state/_responsive.scss */
-  .front-page-title {
+  /* line 50, ../../sass/state/_responsive.scss */
+  .page-title {
     width: 97.22222%;
     float: left;
     margin-left: 1.38889%;
     margin-right: 1.38889%;
   }
 
-  /* line 53, ../../sass/state/_responsive.scss */
+  /* line 54, ../../sass/state/_responsive.scss */
   .intro {
     display: flex;
   }
 
-  /* line 58, ../../sass/state/_responsive.scss */
+  /* line 59, ../../sass/state/_responsive.scss */
   .intro-col {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -984,7 +990,7 @@ body:after {
     padding-right: 1.38889%;
   }
 
-  /* line 63, ../../sass/state/_responsive.scss */
+  /* line 64, ../../sass/state/_responsive.scss */
   .post-title {
     width: 72.22222%;
     float: left;
@@ -992,7 +998,7 @@ body:after {
     margin-right: 1.38889%;
   }
 
-  /* line 67, ../../sass/state/_responsive.scss */
+  /* line 68, ../../sass/state/_responsive.scss */
   .post-meta {
     width: 22.22222%;
     float: right;
@@ -1005,7 +1011,7 @@ body:after {
     6 Column Layout
 */
 @media (min-width: 480px) and (max-width: 900px) {
-  /* line 78, ../../sass/state/_responsive.scss */
+  /* line 79, ../../sass/state/_responsive.scss */
   html {
     font-size: 16px;
     font-size: 0.88889rem;
@@ -1013,7 +1019,7 @@ body:after {
     line-height: 1.25rem;
   }
 
-  /* line 82, ../../sass/state/_responsive.scss */
+  /* line 83, ../../sass/state/_responsive.scss */
   .intro {
     width: 94.44444%;
     float: left;
@@ -1021,7 +1027,7 @@ body:after {
     margin-right: 2.77778%;
   }
 
-  /* line 86, ../../sass/state/_responsive.scss */
+  /* line 87, ../../sass/state/_responsive.scss */
   .nav-link {
     width: 44.44444%;
     float: left;
@@ -1035,7 +1041,7 @@ body:after {
     3 column layout
 */
 @media (max-width: 480px) {
-  /* line 99, ../../sass/state/_responsive.scss */
+  /* line 100, ../../sass/state/_responsive.scss */
   html {
     font-size: 16px;
     font-size: 0.88889rem;
@@ -1043,12 +1049,12 @@ body:after {
     line-height: 1.25rem;
   }
 
-  /* line 103, ../../sass/state/_responsive.scss */
+  /* line 104, ../../sass/state/_responsive.scss */
   .nav-link {
     text-align: center;
   }
 
-  /* line 107, ../../sass/state/_responsive.scss */
+  /* line 108, ../../sass/state/_responsive.scss */
   .nav-link,
   .intro-col,
   .post-title,
@@ -1056,7 +1062,7 @@ body:after {
   .pagination,
   .comment-author,
   .comment-date,
-  .post-actions button,
+  .actions button,
   .comment-actions button {
     width: 88.88889%;
     float: left;

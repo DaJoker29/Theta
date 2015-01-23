@@ -10,6 +10,7 @@ body {
     .sidebar {
         position: fixed;
         @include span(3);
+        border: 0;
     }
 
     .nav-link {
@@ -22,8 +23,8 @@ body {
     }
     
     // Removes Border separator on above large breakpoint
-    .post:first-child,
-    .front-page {
+    .page,
+    .intro {
         border: none;
     }
 }
@@ -37,7 +38,7 @@ body {
     }
 
     .nav-link {
-        @include span(3);
+        @include span(4);
         text-align: center;
     }
 }
@@ -46,7 +47,7 @@ body {
     Medium+
 */
 @include breakpoint ($medium) {
-    .front-page-title {
+    .page-title {
         @include span(12);
     }
 
@@ -111,7 +112,7 @@ body {
         .pagination,
         .comment-author,
         .comment-date,
-        .post-actions button,
+        .actions button,
         .comment-actions button {
             @include span(3);
         }

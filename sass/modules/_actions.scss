@@ -1,8 +1,8 @@
 .actions {
     font-weight: bold;
-    
     button {
         @include span(3);
+        @include rhythm-margins(2);
     }
 }
 .delete {

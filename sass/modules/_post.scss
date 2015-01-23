@@ -2,6 +2,10 @@
     @include leading-border;
     @include margin-trailer(8);
     clear: both;
+    
+    &:first-child {
+        border: none;
+    }
 }
 
 .post-body {

@@ -1,6 +1,6 @@
 .comments {
     @include container(90%);
-    @include rhythm-margins;
+    @include rhythm-margins(5);
     clear: both;
 }
 
