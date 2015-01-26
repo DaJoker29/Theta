@@ -1,6 +1,11 @@
 <!-- Start of Content -->
 <main class="content">
-    <?php include 'posts.php'; ?>
+    <!-- Posts -->
+    <div class="posts">
+        <?php include 'post.php'; ?>
+        <?php include 'post.php'; ?>
+        <?php include 'post.php'; ?>
+    </div>
     <?php include 'pagination.php'; ?>
 </main>
 <!-- End of Content -->

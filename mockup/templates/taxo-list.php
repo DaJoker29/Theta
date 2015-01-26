@@ -1,0 +1,54 @@
+<h2 class="<?php echo strtolower($taxo); ?>-heading"><?php echo $taxo; ?></h2>
+<p class="<?php echo strtolower($taxo); ?>-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quo ut quod quae dignissimos omnis id molestiae possimus dolorem! Sint fuga rem, illum non ipsa similique expedita omnis repellendus, asperiores!</p>
+<ul class="results">
+    <li class="result"><a href="#" class="result-link">Lorem ipsum dolor.</a></li>
+    <li class="result"><a href="#" class="result-link">Quod et, illum.</a></li>
+    <li class="result"><a href="#" class="result-link">Earum, libero, cumque!</a></li>
+    <li class="result"><a href="#" class="result-link">Expedita, facere, suscipit.</a></li>
+    <li class="result"><a href="#" class="result-link">Omnis, illum, perferendis.</a></li>
+    <li class="result"><a href="#" class="result-link">Reprehenderit, nobis, voluptatum.</a></li>
+    <li class="result"><a href="#" class="result-link">Alias, ratione, assumenda.</a></li>
+    <li class="result"><a href="#" class="result-link">Eos, aliquid, cum!</a></li>
+    <li class="result"><a href="#" class="result-link">Velit, porro, facere!</a></li>
+    <li class="result"><a href="#" class="result-link">Dolor, animi cum?</a></li>
+    <li class="result"><a href="#" class="result-link">Porro dolore, ullam.</a></li>
+    <li class="result"><a href="#" class="result-link">Earum quisquam, dicta?</a></li>
+    <li class="result"><a href="#" class="result-link">Ipsum, doloribus, amet.</a></li>
+    <li class="result"><a href="#" class="result-link">Aut, accusantium, molestiae?</a></li>
+    <li class="result"><a href="#" class="result-link">Voluptate, temporibus, fugit.</a></li>
+    <li class="result"><a href="#" class="result-link">Doloribus, soluta error.</a></li>
+    <li class="result"><a href="#" class="result-link">Fuga, officia, voluptatum.</a></li>
+    <li class="result"><a href="#" class="result-link">Labore, consectetur at?</a></li>
+    <li class="result"><a href="#" class="result-link">Tempore, accusantium doloremque.</a></li>
+    <li class="result"><a href="#" class="result-link">Repellat, commodi blanditiis.</a></li>
+    <li class="result"><a href="#" class="result-link">Consequatur, exercitationem, et!</a></li>
+    <li class="result"><a href="#" class="result-link">Nam, cumque voluptatem.</a></li>
+    <li class="result"><a href="#" class="result-link">Fugiat, doloribus, labore?</a></li>
+    <li class="result"><a href="#" class="result-link">Earum, itaque, laboriosam.</a></li>
+    <li class="result"><a href="#" class="result-link">Eaque, ratione, quidem.</a></li>
+    <li class="result"><a href="#" class="result-link">Adipisci esse, reiciendis!</a></li>
+    <li class="result"><a href="#" class="result-link">Repellendus, quas, voluptatibus.</a></li>
+    <li class="result"><a href="#" class="result-link">Quasi, ea, in.</a></li>
+    <li class="result"><a href="#" class="result-link">Est, quis, assumenda!</a></li>
+    <li class="result"><a href="#" class="result-link">Ab, distinctio, ipsum!</a></li>
+    <li class="result"><a href="#" class="result-link">Nobis, eius ea.</a></li>
+    <li class="result"><a href="#" class="result-link">Nobis, dignissimos non.</a></li>
+    <li class="result"><a href="#" class="result-link">Aspernatur, consequuntur, atque!</a></li>
+    <li class="result"><a href="#" class="result-link">Minima, pariatur, tenetur?</a></li>
+    <li class="result"><a href="#" class="result-link">Placeat eveniet, esse.</a></li>
+    <li class="result"><a href="#" class="result-link">Ipsa, enim, qui.</a></li>
+    <li class="result"><a href="#" class="result-link">Facilis, fuga, accusamus.</a></li>
+    <li class="result"><a href="#" class="result-link">Explicabo, dolore, aliquid?</a></li>
+    <li class="result"><a href="#" class="result-link">Nemo, rem. Vel.</a></li>
+    <li class="result"><a href="#" class="result-link">Laborum, quisquam, est!</a></li>
+    <li class="result"><a href="#" class="result-link">Facilis, corrupti, dicta?</a></li>
+    <li class="result"><a href="#" class="result-link">Officia, doloremque, distinctio!</a></li>
+    <li class="result"><a href="#" class="result-link">Et, placeat, consectetur?</a></li>
+    <li class="result"><a href="#" class="result-link">At, et. Excepturi.</a></li>
+    <li class="result"><a href="#" class="result-link">Magnam, nesciunt, iure!</a></li>
+    <li class="result"><a href="#" class="result-link">Magnam sed, natus!</a></li>
+    <li class="result"><a href="#" class="result-link">Nihil, praesentium earum.</a></li>
+    <li class="result"><a href="#" class="result-link">Omnis, quas. Delectus.</a></li>
+    <li class="result"><a href="#" class="result-link">Esse, hic, suscipit?</a></li>
+    <li class="result"><a href="#" class="result-link">Expedita ullam, placeat!</a></li>
+</ul>

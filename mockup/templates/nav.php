@@ -5,6 +5,6 @@
         <li class="nav-link"><a href="front-page.php">Front Page</a></li>
         <li class="nav-link"><a href="single-page.php">Single Page</a></li>
         <li class="nav-link"><a href="gallery.php">Gallery</a></li>
-        <li class="nav-link"><a href="#">Contact</a></li>
+        <li class="nav-link"><a href="category.php">Category</a></li>
     </ul>
 </nav>

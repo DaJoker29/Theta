@@ -625,6 +625,26 @@ textarea {
   margin-right: 1.38889%;
 }
 
+/* line 1, ../../sass/layouts/_taxonomy.scss */
+.results {
+  list-style-type: none;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2.alpha.1/sass/susy/output/support/_clearfix.scss */
+.results:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 7, ../../sass/layouts/_taxonomy.scss */
+.result::before {
+  content: "Θ";
+  padding-right: 0.5rem;
+}
+
 /* line 1, ../../sass/modules/_post.scss */
 .post {
   border-top-width: 2px;
