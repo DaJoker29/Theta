@@ -1,4 +1,4 @@
-<h2 class="<?php echo strtolower($taxo); ?>-heading"><?php echo $taxo; ?></h2>
+<h2 class="<?php echo strtolower($taxo); ?>-heading"><?php echo $taxo; ?>: Lorem.</h2>
 <p class="<?php echo strtolower($taxo); ?>-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quo ut quod quae dignissimos omnis id molestiae possimus dolorem! Sint fuga rem, illum non ipsa similique expedita omnis repellendus, asperiores!</p>
 <ul class="results">
     <li class="result"><a href="#" class="result-link">Lorem ipsum dolor.</a></li>
