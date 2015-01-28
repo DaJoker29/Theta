@@ -167,7 +167,9 @@ form,
 textarea,
 input,
 select {
-    @include rhythm-borders;
+    &:not(#adminbarsearch) {
+        @include rhythm-borders;
+    }
 }
 
 textarea,

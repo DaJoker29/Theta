@@ -15,14 +15,17 @@ module.exports = function(grunt) {
             },
             sass: {
                 files: ['sass/**/*.scss'],
-                tasks: ['compass'],
+                tasks: ['compass', 'copy:sass'],
             },
             js: {
                 files: ['js/**/*.js'],
-                tasks: ['js-build'],
+                tasks: ['js-build', 'copy:js'],
             },
             html: {
                 files: ['mockup/**/*.php', 'mockup/**/*.html'],
+            },
+            theme: {
+                files: ['theta/**/*.*']
             }
         },
         concat: {
@@ -46,6 +49,20 @@ module.exports = function(grunt) {
                     'mockup/script.min.js': 'mockup/script.js'
                 }
             }
+        },
+        copy: {
+            sass: {
+                expand: true,
+                cwd: 'mockup/',
+                src: 'stylesheets/*',
+                dest: 'theta/'
+            },
+            js: {
+                expand: true,
+                cwd: 'mockup/',
+                src: '*.js',
+                dest: 'theta/'
+            }
         }
     });
 
@@ -54,8 +71,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.registerTask('js-build', ['jshint:before', 'concat', 'jshint:after', 'uglify']);
-    grunt.registerTask('build', [ 'js-build', 'compass']);
+    grunt.registerTask('build', [ 'js-build', 'compass', 'copy']);
     grunt.registerTask('default', ['build', 'watch']);
 };

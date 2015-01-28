@@ -14,23 +14,23 @@ function christmas(obj, state, parent) {
     if(parent) {
         /* Set selector*/
         var selector = parent + ' ' + obj;
-        $(selector).hover(
+        jQuery(selector).hover(
             function() {
-                $(this).closest(parent).addClass(state);
+                jQuery(this).closest(parent).addClass(state);
             },
             function() {
-                $(this).closest(parent).removeClass(state);
+                jQuery(this).closest(parent).removeClass(state);
             }
         ); 
     }
 
     else {
-        $(obj).hover(
+        jQuery(obj).hover(
             function() {
-                $(this).addClass(state);
+                jQuery(this).addClass(state);
             },
             function() {
-                $(this).removeClass(state);
+                jQuery(this).removeClass(state);
             }
         );
     }
@@ -40,7 +40,7 @@ function christmas(obj, state, parent) {
 /*
     Load it up
 */
-$(document).ready(function() {
+jQuery(document).ready(function() {
     /*  Change borders on navigation links  */
     christmas(null, 'hover', '.nav-link');
     christmas('.site-title');
