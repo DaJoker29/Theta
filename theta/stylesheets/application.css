@@ -438,6 +438,7 @@ textarea {
 
 /* line 1, ../../sass/layouts/_content.scss */
 .content {
+  overflow: hidden;
   margin-top: 36px;
   margin-top: 2rem;
   margin-bottom: 36px;
@@ -689,7 +690,7 @@ textarea {
 
 /* line 8, ../../sass/modules/_pagination.scss */
 .pagination {
-  width: 47.22222%;
+  width: 97.22222%;
   float: left;
   margin-left: 1.38889%;
   margin-right: 1.38889%;
@@ -709,16 +710,17 @@ textarea {
   border-bottom-color: #B23130;
   padding-bottom: 7px;
   padding-bottom: 0.38889rem;
+  color: #888;
 }
 
-/* line 14, ../../sass/modules/_pagination.scss */
+/* line 15, ../../sass/modules/_pagination.scss */
 .next {
   width: 47.22222%;
   float: right;
   margin-left: 1.38889%;
   margin-right: 1.38889%;
 }
-/* line 17, ../../sass/modules/_pagination.scss */
+/* line 18, ../../sass/modules/_pagination.scss */
 .next a:after {
   content: "⇨";
   font-size: 36px;
@@ -733,7 +735,7 @@ textarea {
   padding-left: 1rem;
 }
 
-/* line 23, ../../sass/modules/_pagination.scss */
+/* line 24, ../../sass/modules/_pagination.scss */
 .prev a:before {
   content: "⇦";
   font-size: 36px;
@@ -750,7 +752,7 @@ textarea {
 
 /* line 1, ../../sass/modules/_btn.scss */
 button,
-.button {
+.btn {
   border-width: 2px;
   border-width: 0.11111rem;
   border-style: solid;
@@ -769,23 +771,24 @@ button,
   color: #B23130;
   border-color: #B23130;
   cursor: pointer;
+  text-align: center;
 }
-/* line 11, ../../sass/modules/_btn.scss */
+/* line 12, ../../sass/modules/_btn.scss */
 button:hover,
-.button:hover {
+.btn:hover {
   color: #D3D3D3;
   border-color: #D3D3D3;
 }
-/* line 16, ../../sass/modules/_btn.scss */
+/* line 17, ../../sass/modules/_btn.scss */
 button[type=submit],
-.button[type=submit] {
+.btn[type=submit] {
   background-color: #B23130;
   color: #000000;
   border-color: #000000;
 }
 /* line 19, ../../sass/core/_mixins.scss */
 button[type=submit]:hover,
-.button[type=submit]:hover {
+.btn[type=submit]:hover {
   color: #D3D3D3;
   border-color: #D3D3D3;
 }
@@ -922,12 +925,9 @@ button[type=submit]:hover,
   clear: both;
 }
 
-/* line 1, ../../sass/modules/_actions.scss */
-.actions {
-  font-weight: bold;
-}
-/* line 3, ../../sass/modules/_actions.scss */
-.actions button {
+/* line 2, ../../sass/modules/_actions.scss */
+.actions button,
+.actions .btn {
   width: 22.22222%;
   float: right;
   margin-right: 1.38889%;
@@ -964,6 +964,26 @@ button[type=submit]:hover,
   padding-bottom: 0.5rem;
 }
 
+/* line 5, ../../sass/theme/_theta.scss */
+.content li {
+  list-style-type: none;
+}
+/* line 8, ../../sass/theme/_theta.scss */
+.content li::before {
+  content: "Θ";
+  font-size: 18px;
+  font-size: 1rem;
+  line-height: 23px;
+  line-height: 1.25rem;
+  display: inline-block;
+  padding-top: 9px;
+  padding-top: 0.5rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  color: #888;
+}
+
 /* line 1, ../../sass/state/_display.scss */
 .hover {
   border-color: #D3D3D3 !important;
@@ -985,15 +1005,25 @@ button[type=submit]:hover,
   border-color: #D3D3D3 !important;
 }
 
-/* line 20, ../../sass/state/_display.scss */
+/* line 19, ../../sass/state/_display.scss */
 :disabled {
   background: #888;
   border-color: #888;
 }
 
-/* line 25, ../../sass/state/_display.scss */
+/* line 24, ../../sass/state/_display.scss */
 :focus {
   outline: none;
+}
+
+/* line 28, ../../sass/state/_display.scss */
+.sticky .post-title:after {
+  content: "Sticky";
+  font-size: 12px;
+  font-size: 0.66667rem;
+  line-height: 18px;
+  line-height: 1rem;
+  color: #888;
 }
 
 /* Global */
@@ -1051,14 +1081,15 @@ body:after {
 */
 @media (min-width: 900px) and (max-width: 1200px) {
   /* line 36, ../../sass/state/_responsive.scss */
-  .sidebar {
+  .sidebar,
+  .content {
     width: 97.22222%;
     float: left;
     margin-left: 1.38889%;
     margin-right: 1.38889%;
   }
 
-  /* line 40, ../../sass/state/_responsive.scss */
+  /* line 41, ../../sass/state/_responsive.scss */
   .nav-link {
     width: 30.55556%;
     float: left;
@@ -1071,7 +1102,7 @@ body:after {
     Medium+
 */
 @media (min-width: 900px) {
-  /* line 50, ../../sass/state/_responsive.scss */
+  /* line 51, ../../sass/state/_responsive.scss */
   .page-title {
     width: 97.22222%;
     float: left;
@@ -1079,12 +1110,12 @@ body:after {
     margin-right: 1.38889%;
   }
 
-  /* line 54, ../../sass/state/_responsive.scss */
+  /* line 55, ../../sass/state/_responsive.scss */
   .intro {
     display: flex;
   }
 
-  /* line 59, ../../sass/state/_responsive.scss */
+  /* line 60, ../../sass/state/_responsive.scss */
   .intro-col {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1095,7 +1126,7 @@ body:after {
     padding-right: 1.38889%;
   }
 
-  /* line 64, ../../sass/state/_responsive.scss */
+  /* line 65, ../../sass/state/_responsive.scss */
   .post-title {
     width: 72.22222%;
     float: left;
@@ -1103,7 +1134,7 @@ body:after {
     margin-right: 1.38889%;
   }
 
-  /* line 68, ../../sass/state/_responsive.scss */
+  /* line 69, ../../sass/state/_responsive.scss */
   .post-meta {
     width: 22.22222%;
     float: left;
@@ -1116,7 +1147,7 @@ body:after {
     6 Column Layout
 */
 @media (min-width: 480px) and (max-width: 900px) {
-  /* line 79, ../../sass/state/_responsive.scss */
+  /* line 80, ../../sass/state/_responsive.scss */
   html {
     font-size: 16px;
     font-size: 0.88889rem;
@@ -1124,7 +1155,7 @@ body:after {
     line-height: 1.25rem;
   }
 
-  /* line 83, ../../sass/state/_responsive.scss */
+  /* line 84, ../../sass/state/_responsive.scss */
   .intro {
     width: 94.44444%;
     float: left;
@@ -1132,7 +1163,7 @@ body:after {
     margin-right: 2.77778%;
   }
 
-  /* line 87, ../../sass/state/_responsive.scss */
+  /* line 88, ../../sass/state/_responsive.scss */
   .nav-link {
     width: 44.44444%;
     float: left;
@@ -1146,7 +1177,7 @@ body:after {
     3 column layout
 */
 @media (max-width: 480px) {
-  /* line 100, ../../sass/state/_responsive.scss */
+  /* line 101, ../../sass/state/_responsive.scss */
   html {
     font-size: 16px;
     font-size: 0.88889rem;
@@ -1154,12 +1185,12 @@ body:after {
     line-height: 1.25rem;
   }
 
-  /* line 104, ../../sass/state/_responsive.scss */
+  /* line 105, ../../sass/state/_responsive.scss */
   .nav-link {
     text-align: center;
   }
 
-  /* line 108, ../../sass/state/_responsive.scss */
+  /* line 109, ../../sass/state/_responsive.scss */
   .nav-link,
   .gallery-img,
   .intro-col,

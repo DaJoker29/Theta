@@ -1,3 +1,13 @@
 .intro-col:before {
     @include unicode($size: 300%);
 }
+
+.content li {
+    list-style-type: none;
+    
+    &::before {
+        @include unicode();
+        margin-right: rhythm();
+        color: $dark-gray; 
+    }
+}

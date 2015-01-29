@@ -33,7 +33,8 @@ body {
      Medium to Large
 */
 @include breakpoint($medium $large) {
-    .sidebar {
+    .sidebar,
+    .content {
         @include span(12);
     }
 

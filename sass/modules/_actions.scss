@@ -1,6 +1,6 @@
 .actions {
-    font-weight: bold;
-    button {
+    button,
+    .btn {
         @include with-layout(rtl) {
             @include span(3);
             @include rhythm-margins(2);

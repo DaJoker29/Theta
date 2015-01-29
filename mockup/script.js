@@ -44,5 +44,4 @@ jQuery(document).ready(function() {
     /*  Change borders on navigation links  */
     christmas(null, 'hover', '.nav-link');
     christmas('.site-title');
-    christmas(null, null, '.pagination');
 });

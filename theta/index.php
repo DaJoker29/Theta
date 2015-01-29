@@ -6,7 +6,7 @@
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
         <!-- Post -->
-        <article id="post-<?php the_id(); ?>"class="post">
+        <article id="post-<?php the_id(); ?>" <?php post_class(); ?>>
             <!-- Post Heading -->
             <header class="post-heading">
                 <!-- Post Title -->
@@ -23,11 +23,20 @@
             </div>
             <!-- Post Actions -->
             <div class="actions">
-                <?php edit_post_link(__('Edit'), '<button class="edit">','</button>' ); ?>
+                <?php edit_post_link(__('Edit', 'theta')); ?>
             </div>
         </article>
 
-        <?php endwhile; else : ?>
+        <?php endwhile; ?>
+        <!-- Main Loop Ends Here -->
+
+        <!-- Pagination -->
+        <div class="pagination-container">
+            <span class="pagination"><?php posts_nav_link(' &#952; ', 'Newer', 'Older' ); ?></span>
+        </div>
+        
+        <!-- If No Posts found -->
+        <?php else : ?>
             <p><?php _e( 'Sorry, no posts found.' ); ?></p>
         <?php endif; ?>
         <!-- Loop Ends Here -->

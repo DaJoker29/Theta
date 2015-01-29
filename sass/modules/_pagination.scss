@@ -6,9 +6,10 @@
 }
 
 .pagination {
-    @include span(6);
+    @include span(12);
     @include rhythm-margins(3);
     @include h-borders;
+    color: $dark-gray;
 }
 
 .next {

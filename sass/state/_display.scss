@@ -16,7 +16,6 @@
     @include light-borders;
 }
 
-
 :disabled {
     background: $dark-gray;
     border-color: $dark-gray;
@@ -24,4 +23,10 @@
 
 :focus {
     outline: none;
+}
+
+.sticky .post-title:after {
+    content: "Sticky";
+    @include adjust-font-size-to($small-zd);
+    color: $dark-gray;
 }
